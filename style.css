@@ -21,13 +21,13 @@
     align-items: center;
 }
 .icon{
-    width: 215px;
+    width: 150px;
     cursor: pointer;
     padding-top: 10px;
     transition: 0.1s;
 }
 .icon:hover{
-    width: 218px;
+    width: 155px;
 }
 .menu-logo{
     width: 30px;
@@ -85,11 +85,11 @@ nav ul li a:hover{
 }
 h1{
     color: whitesmoke;
-    font-size: 75px;
+    font-size: 65px;
 }
 p{
     color: whitesmoke;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 23px;
     margin-top: 10px;
     text-justify:newspaper;
@@ -153,4 +153,66 @@ h5{
     text-align: center;
     font-weight: 400;
     
+}
+@media screen and (max-width: 1349px){
+    .col2{
+        display: flex;
+        flex-wrap: wrap;
+        height: 500px;
+        margin-left: 100px;
+    }
+}
+@media screen and (max-width: 1212px){
+    .col2{
+        display: none;
+    }
+    .row{
+        display: inline-block;
+    }
+    .col1{
+        margin-top: 140px;
+    }
+    
+    h1{
+        font-size: 55px;
+        margin-left: 100px;
+        margin-bottom: 20px;
+    }
+    p{
+        margin-left: 100px;
+        font-size: 15px;
+    }
+    button{
+        margin-left: 100px;
+    }
+    nav ul{
+        display: none;
+    }
+    .icon{
+        width: 150px;
+    }
+    
+}
+@media screen and (max-width: 631px){
+    h1{
+        font-size: 40px;
+    }
+    p{
+        font-size: 11px;
+    }
+    .icon{
+        width: 120px;
+    }
+    .row{
+        display: flex;
+    }
+    .col1{
+        margin-left: 60px;
+        margin-bottom: 60px;
+    }
+}
+@media screen and (max-width:520px){
+    .col1{
+        margin-left: 10px;
+    }
 }
