@@ -1,5 +1,5 @@
 # Assignment-2-ID--MengTeck--Haniel
-# Your Project's Name
+# Insight.Com
 
 One or two paragraphs providing an overview of your project. Tell us about your project.
 
