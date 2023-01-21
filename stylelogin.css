@@ -88,31 +88,6 @@ h3 {
     padding: 0 100px;
     font-weight: bold;
 }   
-.navbar {
-    background: black;
-    height: 80px;
-    width: 100%;
-}
-
-.navbar ul {
-    float: right;
-    margin-right: 40px;
-}
-.navbar li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 20px;
-}
-.navbar ul li a {
-    color: white;
-    font-size: 20px;
-    text-transform: uppercase;
-}
-.topnav:hover {
-    background-color: grey;
-    border: 2px solid grey;
-    transition: .5s;
-}
 .checkbtn {
     color: white;
     font-size: 30px;
@@ -143,7 +118,7 @@ h3 {
         left: 0;
     }
     #form {
-        width: 200px;
+        width: 250px;
         margin: 6vh auto 0 auto;
         background-color: white;
         padding: 30px;
