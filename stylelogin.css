@@ -104,6 +104,7 @@ h3 {
     color: palevioletred;
 }
 @media (max-width: 952px){
+    
     .title {
         font-size:12px;
         padding-left: 15px;
@@ -111,6 +112,9 @@ h3 {
    
 }
 @media (max-width: 858px) {
+    body {
+        background-size: 1080px 2400px;
+    }
     .checkbtn {
         display: block;
     }
