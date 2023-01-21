@@ -111,6 +111,9 @@ h3 {
    
 }
 @media (max-width: 858px) {
+    body {
+        background-size: 1080px 2400px;
+    }
     .checkbtn {
         display: block;
     }
