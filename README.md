@@ -16,6 +16,9 @@ This section is also where you would share links to any wireframes, mockups, dia
 These files should themselves either be included as a pdf file in the project itself (in an separate directory)
 Include the Adobe XD wireframe as a folder. You can include the XD share url. 
 
+Wireframes
+- Normal: https://xd.adobe.com/view/d42337ff-2184-489f-85df-73f8bf0ab0d1-8170/
+- Mobile: https://xd.adobe.com/view/b5e8c81d-a6cc-4056-90d9-792d30e7a75c-e0bb/
 ## Features
 
 In this section, you should go over the different parts of your project, and describe each in a sentence or so.
