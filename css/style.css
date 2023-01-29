@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contain{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.6)),url(/Assignment-2-ID--MengTeck-main/Images/home.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+.icon{
+    width: 150px;
+    cursor: pointer;
+    padding-top: 10px;
+    transition: 0.1s;
+}
+.icon:hover{
+    width: 155px;
+}
+.menu-logo{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 60px;
+    transition: 0.1s;
+}
+.menu-logo:hover{
+    width: 33px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+    position: relative;
+}
+nav ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #ee7f24;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.4s;
+}
+nav ul li:hover::after{
+    width: 100%;
+}
+nav ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 17px;
+    letter-spacing: 1px;
+    transition: 0.4s;
+}
+nav ul li a:hover{
+    font-size: 18px;
+}
+
+.navbar{
+    margin-bottom: 40px;
+}
+.row{
+    display: flex;
+    height: 65%;
+    align-items: center;
+}
+.column{
+    flex-basis: 50%;
+}
+.col2{
+    margin-top: 60px;
+    margin-left: 200px;
+}
+h1{
+    color: whitesmoke;
+    font-size: 65px;
+}
+p{
+    color: whitesmoke;
+    font-size: 14px;
+    line-height: 23px;
+    margin-top: 10px;
+    text-justify:newspaper;
+}
+button{
+    width: 180px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    padding: 12px 0;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    background: linear-gradient(to left,#ff9412,#EE5A24, #ffa812);
+    background-size: 200%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.home-btn:hover{
+    background-position: right;
+    width: 185px;
+}
+.box{
+    width: 200px;
+    height: 250px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 25px 35px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: 0.3s;
+}
+.box1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15),rgba(0,0,0,0.15)) ,url(/Assignment-2-ID--MengTeck-main/Images/History.jpg);
+}
+.box2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15),rgba(0,0,0,0.15)), url(/Assignment-2-ID--MengTeck-main/Images/Geography.jpg);
+}
+.box3{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15),rgba(0,0,0,0.15)), url(/Assignment-2-ID--MengTeck-main/Images/Sports.jpg);
+}
+.box4{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15),rgba(0,0,0,0.15)), url(/Assignment-2-ID--MengTeck-main/Images/Food.jpg);
+}
+
+.box:hover{
+    transform: translateY(-5px);
+    transition: 0.4s;
+}
+h5{
+    color: rgb(229, 229, 229);
+    text-shadow: 0 0 5px rgb(117, 117, 117);
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    font-weight: 400;
+    
+}
+@media screen and (max-width: 1349px){
+    .col2{
+        display: flex;
+        flex-wrap: wrap;
+        height: 500px;
+        margin-left: 100px;
+    }
+}
+@media screen and (max-width: 1212px){
+    .col2{
+        display: none;
+    }
+    .row{
+        display: inline-block;
+    }
+    .col1{
+        margin-top: 140px;
+    }
+    
+    h1{
+        font-size: 55px;
+        margin-left: 100px;
+        margin-bottom: 20px;
+    }
+    p{
+        margin-left: 100px;
+        font-size: 15px;
+    }
+    button{
+        margin-left: 100px;
+    }
+    nav ul{
+        display: none;
+    }
+    .icon{
+        width: 150px;
+    }
+    
+}
+@media screen and (max-width: 631px){
+    h1{
+        font-size: 40px;
+    }
+    p{
+        font-size: 11px;
+    }
+    .icon{
+        width: 120px;
+    }
+    .row{
+        display: flex;
+    }
+    .col1{
+        margin-left: 60px;
+        margin-bottom: 60px;
+    }
+}
+@media screen and (max-width:520px){
+    .col1{
+        margin-left: 10px;
+    }
+}
