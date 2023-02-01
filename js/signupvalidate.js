@@ -72,12 +72,5 @@ const validateInputs = () => {
         setSuccess(password2);
     }
 
-    if(dateValue === '') {
-        setError(date, 'Please input date');
-    }
-    else {
-        setSuccess(date);
-    }
-
 
 };

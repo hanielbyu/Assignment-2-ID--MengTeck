@@ -11,6 +11,19 @@ body {
     background-size: cover;
     font-family: 'Lilita One', cursive;
 }
+nav {
+    background: transparent;
+}
+.icon {
+    margin-left: 100px;
+    width: 100px;
+    cursor: pointer;
+    padding-top: 10px;
+    transition: 0.1s;
+}
+.icon:hover {
+    width: 150px;
+}
 .title {
     color: white;
     font-size: 45px;
@@ -18,7 +31,6 @@ body {
     padding: 0 100px;
     font-weight: bold;
 }   
-
 .checkbtn {
     color: white;
     font-size: 30px;
@@ -33,12 +45,12 @@ body {
 }
 #form {
     width: 300px;
-    height: 450px;
-    margin: 12vh auto 0 auto;
+    height: 370px;
     background-color: white;
-    padding: 40px;
     border-radius: 10px;
     font-size: 12px;
+    padding: 35px;
+    margin: 15vh auto 0 auto;
 }
 h3 {
     text-align: center;
@@ -56,9 +68,10 @@ h3 {
 }
 #submit {
     padding: 13px;
-    margin-top: 10px;
+    margin-top: 5px;
     width: 25%;
     border: none;
+    cursor: pointer;
     background-color: rgba(220, 132, 0, 0.997);
     color: white;
     border-radius: 4px;
@@ -112,7 +125,7 @@ h3 {
 }
 @media (max-width: 858px) {
     body {
-        background-size: 1080px 2400px;
+        height: 100vh;
     }
     .checkbtn {
         display: block;
@@ -121,8 +134,8 @@ h3 {
         left: 0;
     }
     #form {
-        width: 300px;
-        margin: 8vh auto 0 auto;
+        width: 280px;
+        margin: 10vh auto 0 auto;
         background-color: white;
         padding: 30px;
         border-radius: 10px;

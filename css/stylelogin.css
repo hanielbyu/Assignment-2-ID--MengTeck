@@ -9,6 +9,17 @@ body {
     background-position: center;
     background-size: cover;
     font-family: 'Lilita One', cursive;
+    height: 100vh;
+}
+.icon {
+    margin-left: 100px;
+    width: 100px;
+    cursor: pointer;
+    padding-top: 10px;
+    transition: 0.1s;
+}
+.icon:hover {
+    width: 150px;
 }
 .title {
     color: white;
@@ -30,9 +41,9 @@ body {
     display: none;
 }
 #form {
-    width: 300px;
-    height: 220px;
-    margin: 20vh auto 0 auto;
+    width: 280px;
+    height: 210px;
+    margin: 30vh auto 0 auto;
     background-color: white;
     padding: 30px;
     border-radius: 10px;
@@ -57,10 +68,11 @@ h3 {
     margin-top: 10px;
     width: 45%;
     border: none;
-    background-color: rgba(220, 132, 0, 0.997);
+    background-color: rgb(220, 132, 0, 0.997);
     color: white;
     border-radius: 4px;
     float: right;
+    cursor: pointer;
 }
 #submit:hover {
     background-color: rgba(255, 182, 73, 0.997);
