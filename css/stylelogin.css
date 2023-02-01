@@ -21,6 +21,10 @@ body {
 .icon:hover {
     width: 150px;
 }
+label {
+    font-weight: bold;
+    font-size: 15px;
+}
 .title {
     color: white;
     font-size: 45px;
@@ -42,7 +46,7 @@ body {
 }
 #form {
     width: 280px;
-    height: 210px;
+    height: 235px;
     margin: 30vh auto 0 auto;
     background-color: white;
     padding: 30px;
@@ -52,11 +56,14 @@ body {
 h3 {
     text-align: left;
 }
-.signup {
+small, a {
+    font-size: 12px;
+}
+.signin {
     display: flex;
     flex-direction: column;
 }
-.signup input {
+.signin input {
     border-radius:8px ;
     display: block;
     font-size: 12px;
@@ -77,16 +84,16 @@ h3 {
 #submit:hover {
     background-color: rgba(255, 182, 73, 0.997);
 }
-.signup input:focus{
+.signin input:focus{
     outline: 0;
 }
-.signup.success input{
+.signin.success input{
     border-color:  rgb(28, 226, 28);
 }
-.signup.error input {
+.signin.error input {
     border-color: red;
 }
-.signup .error {
+.signin .error {
     color: red;
     font-size: 12px;
     height: 13px;
@@ -110,7 +117,7 @@ h3 {
 #check {
     display: none;
 }
-#signup {
+#signin {
     color: palevioletred;
 }
 @media (max-width: 952px){

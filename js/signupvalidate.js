@@ -3,11 +3,9 @@ const username = document.getElementById('username');
 const email = document.getElementById('email');
 const password1 = document.getElementById('password1');
 const password2 = document.getElementById('password2');
-const date = document.getElementById('date')
 
 form.addEventListener('submit', e => {
     e.preventDefault();
-
     validateInputs();
 });
 
@@ -39,7 +37,6 @@ const validateInputs = () => {
     const emailValue = email.value.trim();
     const password1Value = password1.value.trim();
     const password2Value = password2.value.trim();
-    const dateValue = date.value.trim();
 
     if(usernameValue === '') {
         setError(username, 'Username is required');

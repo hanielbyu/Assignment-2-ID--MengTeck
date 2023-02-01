@@ -5,26 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Assignment-2-ID--MengTeck/css/stylelogin.css">
-    <script src="/Assignment-2-ID--MengTeck/js/signinvalidate.js"></script>
+    
     <title>Login</title>
 </head>
 <body>
     <main>
         <form id="form" action="\">
             <h3>Login</h3>
-            <div class="signup">
+            <div class="signin">
                 <label for="username">Username</label>
-                <input id="username" name="username" type="text">
+                <input id="username" name="username" type="text" required>
                 <div class="error"></div>
             </div>
-            <div class="signup">
+            <div class="signin">
                 <label for="password">Password</label>
-                <input id="password" id="password"name="password1" type="password">
+                <input id="password" id="password"name="password1" type="password" required>
                 <div class="error"></div>
             </div>
             <small>New to Insight?</small><a href="/Assignment-2-ID--MengTeck/html/Signup.html">Sign up</a>
             <button id="submit">Login</button>
         </form>
     </main>
+    <script defer src="/Assignment-2-ID--MengTeck/js/signinvalidate.js"></script>
 </body>
 </html>
