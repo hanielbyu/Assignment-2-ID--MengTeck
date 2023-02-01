@@ -5,15 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Assignment-2-ID--MengTeck/css/stylelogin.css">
-    <link rel="stylesheet" href="/Assignment-2-ID--MengTeck/css/common-style.css">
+    <script src="/Assignment-2-ID--MengTeck/js/signinvalidate.js"></script>
     <title>Login</title>
 </head>
 <body>
-    <header>
-        <div w3-include-html="header.html"></div>
-        <script src="/Assignment-2-ID--MengTeck/js/w3-include-HTML.js"></script>
-    </header>
-    
     <main>
         <form id="form" action="\">
             <h3>Login</h3>
@@ -24,11 +19,11 @@
             </div>
             <div class="signup">
                 <label for="password">Password</label>
-                <input id="password" name="password1" type="password">
+                <input id="password" id="password"name="password1" type="password">
                 <div class="error"></div>
             </div>
-            <small>New to Insight?</small><a href="Signup.html">Sign up</a>
-            <button type="submit" id="submit">Sign Up</button>
+            <small>New to Insight?</small><a href="/Assignment-2-ID--MengTeck/html/Signup.html">Sign up</a>
+            <button id="submit">Login</button>
         </form>
     </main>
 </body>
