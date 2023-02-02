@@ -10,9 +10,13 @@ body {
     background-position: center;
     background-size: cover;
     font-family: 'Lilita One', cursive;
+    height: 100vh;
 }
 nav {
     background: transparent;
+}
+.loading {
+    display: none;
 }
 .icon {
     margin-left: 100px;
@@ -50,7 +54,7 @@ nav {
     border-radius: 10px;
     font-size: 12px;
     padding: 35px;
-    margin: 15vh auto 0 auto;
+    margin: 8vh auto 0 auto;
 }
 h3 {
     text-align: center;
@@ -64,18 +68,17 @@ h3 {
     display: block;
     font-size: 12px;
     padding: 12px;
-    width: 80%;
+    width: 240px;
 }
 #submit {
     padding: 13px;
     margin-top: 5px;
-    width: 25%;
+    width: 265px;
     border: none;
     cursor: pointer;
     background-color: rgba(220, 132, 0, 0.997);
     color: white;
-    border-radius: 4px;
-    float: right;
+    border-radius: 10px;
 }
 #submit:hover {
     background-color: rgba(255, 182, 73, 0.997);
