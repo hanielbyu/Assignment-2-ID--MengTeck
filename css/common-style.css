@@ -10,13 +10,13 @@
 }
 .icon{
     margin-left: 100px;
-    width: 100px;
+    width: 150px;
     cursor: pointer;
     padding-top: 10px;
     transition: 0.1s;
 }
 .icon:hover{
-    width: 155px;
+    width: 153px;
 }
 .menu-logo{
     width: 30px;
@@ -59,4 +59,7 @@ nav ul li a:hover{
 
 .navbar{
     margin-bottom: 40px;
+}
+.menu-logo:hover{
+    width: 33px;
 }
