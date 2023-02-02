@@ -7,7 +7,7 @@
 .contain{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.6)),url(/Assignment-2-ID--MengTeck/images/home.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.6)),url(/Images/home.jpg);
     background-position: center;
     background-size: cover;
     padding-left: 8%;
@@ -27,12 +27,16 @@
     transition: 0.1s;
 }
 .icon:hover{
-    width: 155px;
+    width: 153px;
 }
 .menu-logo{
     width: 30px;
     cursor: pointer;
     margin-left: 60px;
+    transition: 0.2s;
+}
+.menu-logo:hover{
+    width: 33px;
 }
 nav{
     flex: 1;
@@ -128,16 +132,16 @@ button:hover{
     transition: 0.3s;
 }
 .box1{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.15),rgba(0,0,0,0.15)) ,url(/Assignment-2-ID--MengTeck/images/History.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15),rgba(0,0,0,0.15)) ,url(/Images/History.jpg);
 }
 .box2{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.15),rgba(0,0,0,0.15)), url(/Assignment-2-ID--MengTeck/images/Geography.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15),rgba(0,0,0,0.15)), url(/Images/Geography.jpg);
 }
 .box3{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.15),rgba(0,0,0,0.15)), url(/Assignment-2-ID--MengTeck/images/Sports.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15),rgba(0,0,0,0.15)), url(/Images/Sports.jpg);
 }
 .box4{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.15),rgba(0,0,0,0.15)), url(/Assignment-2-ID--MengTeck/Images/Food.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15),rgba(0,0,0,0.15)), url(/Images/Food.jpg);
 }
 
 .box:hover{
