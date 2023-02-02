@@ -37,12 +37,11 @@ $(document).ready(function () {
         "processData": false,
         "data": JSON.stringify(jsondata),
         "beforeSend": function(){
-          validateInputs();
           //@TODO use loading bar instead
           //disable our button or show loading bar
           $("#submit").prop( "disabled", true);
           //clear our form using the form id and triggering it's reset feature
-          $("#add-contact-form").trigger("reset");
+          $("#form").trigger("reset");
         }
       }
       $.ajax(settings).done(function (response) {

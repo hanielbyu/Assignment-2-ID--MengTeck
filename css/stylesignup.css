@@ -15,9 +15,6 @@ body {
 nav {
     background: transparent;
 }
-.loading {
-    display: none;
-}
 .icon {
     margin-left: 100px;
     width: 100px;
@@ -70,7 +67,7 @@ h3 {
 #submit {
     padding: 13px;
     margin-top: 5px;
-    width: 265px;
+    width: 270px;
     border: none;
     cursor: pointer;
     background-color: rgba(220, 132, 0, 0.997);
@@ -94,28 +91,7 @@ h3 {
     font-size: 12px;
     height: 13px;
 }
-.title {
-    color: white;
-    font-size: 45px;
-    line-height: 80px;
-    padding: 0 100px;
-    font-weight: bold;
-}   
-.checkbtn {
-    color: white;
-    font-size: 30px;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-}
-#check {
-    display: none;
-}
-#signup {
-    color: palevioletred;
-}
+  
 @media (max-width: 952px){
     .title {
         font-size:12px;

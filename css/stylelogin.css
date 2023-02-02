@@ -45,13 +45,12 @@ label {
     display: none;
 }
 #form {
-    width: 280px;
-    height: 235px;
+    width: 270px;
+    height: 280px;
     margin: 30vh auto 0 auto;
     background-color: white;
     padding: 30px;
     border-radius: 10px;
-    font-size: 12px;
 }
 h3 {
     text-align: left;
@@ -73,12 +72,11 @@ small, a {
 #submit {
     padding: 13px;
     margin-top: 10px;
-    width: 45%;
+    width: 245px;
     border: none;
     background-color: rgb(220, 132, 0, 0.997);
     color: white;
-    border-radius: 4px;
-    float: right;
+    border-radius: 10px;
     cursor: pointer;
 }
 #submit:hover {
