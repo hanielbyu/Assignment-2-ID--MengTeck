@@ -47,7 +47,7 @@ label {
 #form {
     width: 270px;
     height: 280px;
-    margin: 30vh auto 0 auto;
+    margin: 15vh auto 0 auto;
     background-color: white;
     padding: 30px;
     border-radius: 10px;
@@ -74,13 +74,16 @@ small, a {
     margin-top: 10px;
     width: 245px;
     border: none;
-    background-color: rgb(220, 132, 0, 0.997);
-    color: white;
+    background: linear-gradient(to left,#ff9412,#EE5A24, #ffa812);
+    background-size: 200%;
     border-radius: 10px;
     cursor: pointer;
+    transition: 0.3s;
 }
 #submit:hover {
-    background-color: rgba(255, 182, 73, 0.997);
+    background: linear-gradient(to left,#ff9412,#EE5A24, #ffa812);
+    background-position: right;
+    transition: 0.3s;
 }
 .signin input:focus{
     outline: 0;

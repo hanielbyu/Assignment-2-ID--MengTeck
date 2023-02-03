@@ -16,11 +16,12 @@ nav {
     background: transparent;
 }
 .icon {
-    margin-left: 100px;
-    width: 100px;
+    margin-left: 60px;
+    width: 110px;
     cursor: pointer;
     padding-top: 10px;
     transition: 0.1s;
+
 }
 .icon:hover {
     width: 150px;
@@ -43,12 +44,16 @@ nav {
 }
 #form {
     width: 300px;
-    height: 370px;
+    height: 380px;
     background-color: white;
     border-radius: 10px;
     font-size: 12px;
-    padding: 35px;
+    padding: 40px;
     margin: 8vh auto 0 auto;
+}
+.animation {
+    margin-bottom: 10px;
+    float: right;
 }
 h3 {
     text-align: center;
@@ -67,15 +72,18 @@ h3 {
 #submit {
     padding: 13px;
     margin-top: 5px;
-    width: 270px;
+    width: 260px;
     border: none;
     cursor: pointer;
-    background-color: rgba(220, 132, 0, 0.997);
-    color: white;
+    background: linear-gradient(to left,#ff9412,#EE5A24, #ffa812);
+    background-size: 200%;
     border-radius: 10px;
+    transition: 0.3s;
 }
 #submit:hover {
-    background-color: rgba(255, 182, 73, 0.997);
+    background: linear-gradient(to left,#ff9412,#EE5A24, #ffa812);
+    background-position: right;
+    transition: 0.3s;
 }
 .signup input:focus{
     outline: 0;

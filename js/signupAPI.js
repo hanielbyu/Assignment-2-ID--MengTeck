@@ -2,7 +2,7 @@
 $(document).ready(function () {
   //what kind of interface we want at the start 
   const APIKEY = "63b64979969f06502871aa45";
-  
+  $(".animation").hide();
   //[STEP 1]: Create our submit form listener
   $("#submit").on("click", function (e) {
     //prevent default action of the button 
@@ -13,7 +13,7 @@ $(document).ready(function () {
       //you are to do your own data validation
       let username = $("#username").val();
       let email = $("#email").val();
-      let password = $('#password1').val();
+      let password = $("#password1").val();
   
       //[STEP 3]: get form values when user clicks on send
       //Adapted from restdb api
@@ -27,7 +27,7 @@ $(document).ready(function () {
       let settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://mtinteractivedev-900a.restdb.io/rest/contact",
+        "url": "https://mtinteractivedev-900a.restdb.io/rest/contact?max=2",
         "method": "POST", //[cher] we will use post to send info
         "headers": {
           "content-type": "application/json",
@@ -39,15 +39,19 @@ $(document).ready(function () {
         "beforeSend": function(){
           //@TODO use loading bar instead
           //disable our button or show loading bar
-          $("#submit").prop( "disabled", true);
           //clear our form using the form id and triggering it's reset feature
           $("#form").trigger("reset");
         }
       }
       $.ajax(settings).done(function (response) {
         console.log(response);
+        $("#submit").prop( "disabled", false);
+        $(".animation").show();
+        setTimeout(function () {
+          $(".animation").hide();
+        }, 5000)
       });
-  
+
   });
 })
   
