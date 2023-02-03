@@ -39,7 +39,6 @@ $(document).ready(function () {
         "beforeSend": function(){
           //@TODO use loading bar instead
           //disable our button or show loading bar
-          $("#submit").prop( "disabled", true);
           //clear our form using the form id and triggering it's reset feature
           $("#form").trigger("reset");
         }
