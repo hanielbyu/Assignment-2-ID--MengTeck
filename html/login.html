@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/stylelogin.css">
+    <script defer src="/js/loginAPI.js"></script>
     <title>Login</title>
 </head>
 <body>
@@ -16,18 +17,18 @@
             <h3>Login</h3>
             <div class="signin">
                 <label for="username">Username</label>
-                <input id="username" name="username" type="text" required>
+                <input id="username" name="username" type="text">
                 <div class="error"></div>
             </div>
             <div class="signin">
                 <label for="password">Password</label>
-                <input id="password" id="password"name="password1" type="password" required>
+                <input id="password" id="password" type="password">
                 <div class="error"></div>
             </div>
             <small>New to Insight?</small><a href="/html/Signup.html">Sign up</a><br>
-            <button id="submit">Login</button>  
+            <button id="submit">Login</button> 
         </form>
     </main>
-    <script defer src="/js/loginvalidate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 </html>
