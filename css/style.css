@@ -30,10 +30,15 @@
     width: 153px;
 }
 .menu-logo{
-    width: 30px;
+    position: absolute;
+    top: 28px;
+    right: 50px;
+    width: 35px;
     cursor: pointer;
     margin-left: 60px;
     transition: 0.2s;
+    display: none;
+
 }
 .menu-logo:hover{
     width: 33px;
@@ -68,9 +73,7 @@ nav ul li a{
     letter-spacing: 1px;
     transition: 0.4s;
 }
-nav ul li a:hover{
-    font-size: 18px;
-}
+
 
 .navbar{
     margin-bottom: 40px;
@@ -158,6 +161,10 @@ h5{
     font-weight: 400;
     
 }
+.mobile-menu{
+    margin: 0;
+}
+
 @media screen and (max-width: 1349px){
     .col2{
         display: flex;
@@ -167,8 +174,50 @@ h5{
     }
 }
 @media screen and (max-width: 1212px){
+    .contain{
+        padding: 0;
+    }
+    nav{
+        
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color:   rgba(255, 255, 255, 0.20);
+        backdrop-filter: blur(9px);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center ;
+        margin-left: -100%;
+        transition: all 0.4s ease;
+    }
+    nav .mobile-menu{
+        margin-left: 0;
+    }
+    nav ul{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar nav ul li {
+        margin: 25px 0;
+        font-size: 1.5em;
+    }
+    .icon{
+        z-index: 1;
+    }
+    
     .col2{
         display: none;
+    }
+    .menu-logo{
+        display: block;
+        
+    }
+    .icon{
+        position: absolute;
+        margin-left: 10vh;
     }
     .row{
         display: inline-block;
@@ -189,9 +238,7 @@ h5{
     button{
         margin-left: 100px;
     }
-    nav ul{
-        display: none;
-    }
+    
     .icon{
         width: 150px;
     }

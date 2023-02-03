@@ -60,8 +60,8 @@ nav ul li a:hover{
 .navbar{
     margin-bottom: 40px;
 }
-.menu-logo:hover{
-    width: 33px;
+.menu-logo{
+    display: none;
 }
 
 @media screen and (max-width: 1349px){
@@ -75,6 +75,9 @@ nav ul li a:hover{
 @media screen and (max-width: 1212px){
     .col2{
         display: none;
+    }
+    .menu-logo{
+        display: inline-block;
     }
     .row{
         display: inline-block;
