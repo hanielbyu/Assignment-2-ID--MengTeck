@@ -2,7 +2,6 @@
 $(document).ready(function () {
   //what kind of interface we want at the start 
   const APIKEY = "63b64979969f06502871aa45";
-  $(".animation").hide();
   //[STEP 1]: Create our submit form listener
   $("#submit").on("click", function (e) {
     //prevent default action of the button 
@@ -46,10 +45,11 @@ $(document).ready(function () {
       $.ajax(settings).done(function (response) {
         console.log(response);
         $("#submit").prop( "disabled", false);
+        $('.successfulmsg').show();
         $(".animation").show();
         setTimeout(function () {
           $(".animation").hide();
-        }, 5000)
+        }, 4000)
       });
 
   });
