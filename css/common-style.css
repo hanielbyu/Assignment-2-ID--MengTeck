@@ -10,7 +10,6 @@
     align-items: center;
 }
 .icon{
-    margin-left: 100px;
     width: 150px;
     cursor: pointer;
     padding-top: 10px;
@@ -63,4 +62,58 @@ nav ul li a:hover{
 }
 .menu-logo:hover{
     width: 33px;
+}
+
+@media screen and (max-width: 1349px){
+    .col2{
+        display: flex;
+        flex-wrap: wrap;
+        height: 500px;
+        margin-left: 100px;
+    }
+}
+@media screen and (max-width: 1212px){
+    .col2{
+        display: none;
+    }
+    .row{
+        display: inline-block;
+    }
+    .col1{
+        margin-top: 140px;
+    }
+    
+    h1{
+        font-size: 55px;
+        margin-left: 100px;
+        margin-bottom: 20px;
+    }
+    
+    button{
+        margin-left: 100px;
+    }
+    nav ul{
+        display: none;
+    }
+    .icon{
+        width: 150px;
+    }
+    
+}
+@media screen and (max-width: 631px){
+    .icon{
+        width: 120px;
+    }
+    .row{
+        display: flex;
+    }
+    .col1{
+        margin-left: 60px;
+        margin-bottom: 60px;
+    }
+}
+@media screen and (max-width:520px){
+    .col1{
+        margin-left: 10px;
+    }
 }
