@@ -2,7 +2,7 @@
 $(document).ready(function () {
   //what kind of interface we want at the start 
   const APIKEY = "63b64979969f06502871aa45";
-  
+  getContacts();
   //[STEP 1]: Create our submit form listener
   $("#submit").on("click", function (e) {
     //prevent default action of the button 
@@ -46,8 +46,9 @@ $(document).ready(function () {
       }
       $.ajax(settings).done(function (response) {
         console.log(response);
+        $("#submit").prop( "disabled", false);
       });
-  
+
   });
 })
   
