@@ -2,23 +2,7 @@ const form = document.getElementById('form');
 const username = document.getElementById('username');
 const email = document.getElementById('email');
 const submit = document.getElementById('submit');
-const setError = (element, message) => {
-  const inputControl = element.parentElement;
-  const errorDisplay = inputControl.querySelector('.error');
 
-  errorDisplay.innerText = message;
-  inputControl.classList.add('error');
-  inputControl.classList.remove('success')
-}
-
-const setSuccess = element => {
-  const inputControl = element.parentElement;
-  const errorDisplay = inputControl.querySelector('.error');
-
-  errorDisplay.innerText = '';
-  inputControl.classList.add('success');
-  inputControl.classList.remove('error');
-};
 //[STEP 0]: Make sure our document is A-OK
 $(document).ready(function () {
     //what kind of interface we want at the start 
