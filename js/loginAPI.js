@@ -44,18 +44,19 @@ $(document).ready(function () {
           }
        
         }
+        if (getlogininfo.username != username || getlogininfo.password != password) {
+          setError(submit, "Username or password is invalid")
+        }
+        else if (getlogininfo.username == username && getlogininfo.password != password) {
+          $('.successfulmsg').show();
+          $("name").text("Welcome {0}", getlogininfo.username);
+          setTimeout(function () {
+            $(".animation").hide();
+          }, 5000)
+        }
         $.ajax(settings).done(function (response) {
           console.log(response);
-          if (getlogininfo.username != username || getlogininfo.password != password) {
-            setError(submit, "Username or password is invalid")
-          }
-          else if (getlogininfo.username == username && getlogininfo.password != password) {
-            $('.successfulmsg').show();
-            $("name").text("Welcome {0}", getlogininfo.username);
-            setTimeout(function () {
-              $(".animation").hide();
-            }, 5000)
-          }
+          
         });
         
     });

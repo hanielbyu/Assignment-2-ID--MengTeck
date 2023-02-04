@@ -38,7 +38,7 @@ $(document).ready(function () {
         "data": JSON.stringify(jsondata),
         "beforeSend": function(){
           if (username === "" || password1 === "" || password2 == "" || email === "") {
-            $('.errormsg').text("fields cannot be left blank");
+            $('.errormsg').text("Fields cannot be left blank");
           }
           //@TODO use loading bar instead
           //disable our button or show loading bar
