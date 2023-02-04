@@ -62,7 +62,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    display: none;
 
 }
 .modal {
@@ -96,6 +95,9 @@ nav {
     justify-content: center;
 }
 /* end */
+.errormsg {
+    color: red;
+}
 h3 {
     text-align: center;
 }

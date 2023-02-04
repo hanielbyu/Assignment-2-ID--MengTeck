@@ -2,11 +2,12 @@
 $(document).ready(function () {
   //what kind of interface we want at the start 
   const APIKEY = "63b64979969f06502871aa45";
+  $('.successfulmsg').hide();
   //[STEP 1]: Create our submit form listener
   $("#submit").on("click", function (e) {
     //prevent default action of the button 
     e.preventDefault();
-   
+    
       //[STEP 2]: let's retrieve form data
       //for now we assume all information is valid
       //you are to do your own data validation
@@ -36,6 +37,9 @@ $(document).ready(function () {
         "processData": false,
         "data": JSON.stringify(jsondata),
         "beforeSend": function(){
+          if (username === "" || password1 === "" || password2 == "" || email === "") {
+            $('.errormsg').text("fields cannot be left blank");
+          }
           //@TODO use loading bar instead
           //disable our button or show loading bar
           //clear our form using the form id and triggering it's reset feature
@@ -49,7 +53,7 @@ $(document).ready(function () {
         $(".animation").show();
         setTimeout(function () {
           $(".animation").hide();
-        }, 4000)
+        }, 5000)
       });
 
   });
