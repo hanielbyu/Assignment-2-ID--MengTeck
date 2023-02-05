@@ -1,48 +1,42 @@
-const form = document.getElementById('form');
-const username = document.getElementById('username');
-const email = document.getElementById('email');
 const submit = document.getElementById('submit');
 
-//[STEP 0]: Make sure our document is A-OK
-$(document).ready(function () {
-    //what kind of interface we want at the start 
-    const APIKEY = "63b64979969f06502871aa45";
-    $('.successfulmsg').hide();
-    //[STEP 1]: Create our submit form listener
-    $("#submit").on("click", function (e) {
-      //prevent default action of the button 
-      e.preventDefault();
-        function getlogininfo() {
+$(document).ready(function() {
+  const APIKEY = "63b64979969f06502871aa45";
+  $('.successfulmsg').hide();
 
-          //[STEP 7]: Create our AJAX settings
-          let settings = {
-            "async": true,
-            "crossDomain": true,
-            "url": "https://interactivedev-adbb.restdb.io/rest/contact",
-            "method": "GET", //[cher] we will use GET to retrieve info
-            "headers": {
-              "content-type": "application/json",
-              "x-apikey": APIKEY,
-              "cache-control": "no-cache"
-            },
-          }
-       
-        }
-        if (getlogininfo.username != username || getlogininfo.password != password) {
-          setError(submit, "Username or password is invalid")
-        }
-        else if (getlogininfo.username == username && getlogininfo.password != password) {
-          $('.successfulmsg').show();
-          $("name").text("Welcome {0}", getlogininfo.username);
-          setTimeout(function () {
-            $(".animation").hide();
-          }, 5000)
-        }
-        $.ajax(settings).done(function (response) {
-          console.log(response);
-          
-        });
-        
-    });
-   
+  $("#submit").on("click", function(e) {
+    e.preventDefault();
+
+    const username = $("#username").val();
+    const password = $("#password").val();
+
+    let settings = {
+      "async": true,
+      "crossDomain": true,
+      "url": "https://interactivedev-adbb.restdb.io/rest/contact",
+      "method": "GET",
+      "headers": {
+        "content-type": "application/json",
+        "x-apikey": APIKEY,
+        "cache-control": "no-cache"
+      }
+    };
+
+    $.ajax(settings).done(function (response) {
+      for (let i = 0; i < response.length; i++) {
+      const logininfo = response[i];
+      if (logininfo.username === username.value && logininfo.password === password.value) {
+      $('.successfulmsg').show();
+      $("#name").text("Welcome " + username.value);
+      setTimeout(function () {
+      $(".animation").hide();
+      }, 5000);
+      break;
+      }
+      else {
+      setError(submit, "Username or password is invalid");
+      }
+      }
   });
+});
+})
