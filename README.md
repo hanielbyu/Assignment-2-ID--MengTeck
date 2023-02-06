@@ -1,12 +1,11 @@
 # Assignment-2-ID--MengTeck--Haniel
 # Insight.Com
 
-One or two paragraphs providing an overview of your project. Tell us about your project.
+Unleash your inner trivia master with Insight, the ultimate general knowledge quiz website. With four different categories, history, geography, sports, and food. You can put your general knowledge to the test in a fun and engaging way by challenging yourself. The best part of it, then? You can participate with others from across the globe and view your position on the scoreboard. Test your knowledge to discover how you compare to the rest of the world.
 
-Essentially, this part is your sales pitch.
  
 ## Design Process
- 
+ This website is for anyone aged 12 and above, to see how much they know about certain topics that is available on the website
 Provide us insights about your design process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
 In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
