@@ -20,7 +20,8 @@ $(document).ready(function () {
       let jsondata = {
         "username": username,
         "email": email,
-        "password" : password
+        "password" : password,
+        "score" : 0
       };
   
       //[STEP 4]: Create our AJAX settings. Take note of API key
