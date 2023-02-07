@@ -53,7 +53,7 @@ body{
     padding: 7px 10px;
     
 }
-.card-body .butn:hover{
+.butn:hover{
     transform: scale(1.01);
 }
 

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="/css/quiz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+<body>
+    <div class="start"><button>Start Quiz</button></div>
+
+    <div class="ibox">
+        <div class="ititle">
+            <span>Rules of this Quiz</span>
+        </div>
+            <div class="ilist">
+                <div class="info">1.  You will be provided <span>10 seconds</span> per question.</div>
+                <div class="info">2.  Select the Answer to lock your answer.</div>
+                <div class="info">3.  Once time is up it will move to the next question.</div>
+                <div class="info">4.  Try not to exit the quiz while playing.</div>
+                <div class="info">5.  Your scores will be shown on the leaderboard.</div>
+            </div>
+        <div class="button_rule">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>    
+
+
+    <!-------------------------------------------------QUIZ----------------------------------------------------------------->
+
+    <div class="qbox">
+        <header>
+            <div class="qtitle">Quiz Application</div>
+            <div class="timer">
+                <div class="time_text">Time Left</div>
+                <div class="timer_sec">10</div>
+            </div>
+        </header>
+        <section>
+            <div class="qtext">
+                <span>What is your name?</span>
+            </div>
+            <div class="optionli">
+                <div class="option">
+                    <span>Yu Haniel Bharwani</span>
+                    <div class="opt_icon cross"><i class="fas fa-times"></i></div>
+                </div>
+                <div class="option">
+                    <span>Yu Haniel Bharwani</span>
+                    <div class="opt_icon cross"><i class="fas fa-times"></i></div>
+                </div>
+                <div class="option">
+                    <span>Yu Haniel Bharwani</span>
+                    <div class="opt_icon cross"><i class="fas fa-times"></i></div>
+                </div>
+                <div class="option">
+                    <span>Yu Haniel Bharwani</span>
+                    <div class="opt_icon tick"><i class="fas fa-check"></i></div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="totalqn">
+                <span><p>2</p>of<p>5</p>Questions</span>
+            </div>
+            <button class="next_button">Next</button>
+        </footer>
+    </div>
+
+</body>
+</html>

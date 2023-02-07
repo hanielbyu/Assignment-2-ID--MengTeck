@@ -43,10 +43,14 @@
 .menu-logo:hover{
     width: 33px;
 }
-nav{
+.navlink {
     flex: 1;
     text-align: right;
 }
+nav{    
+width: 90%;
+}
+
 nav ul li{
     list-style: none;
     display: inline-block;
@@ -161,9 +165,6 @@ h5{
     font-weight: 400;
     
 }
-.mobile-menu{
-    margin: 0;
-}
 
 @media screen and (max-width: 1349px){
     .col2{
@@ -192,9 +193,10 @@ h5{
         margin-left: -100%;
         transition: all 0.4s ease;
     }
-    nav .mobile-menu{
-        margin-left: 0;
+    .mobile-menu{
+        margin-left: 0%;
     }
+    
     nav ul{
         align-items: center;
         display: flex;
