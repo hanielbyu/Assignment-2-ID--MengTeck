@@ -13,30 +13,44 @@ $(document).ready(function() {
     let settings = {
       "async": true,
       "crossDomain": true,
-      "url": "https://interactivedev-adbb.restdb.io/rest/contact",
+      "url": "https://mtinteractivedev-900a.restdb.io/rest/contact?max=2",
       "method": "GET",
       "headers": {
         "content-type": "application/json",
-        "x-apikey": APIKEY,
+        "x-apikey": APIKEY,	
         "cache-control": "no-cache"
+      },
+      "beforeSend": function(){
+        if (username === "" || password === "") {
+          $('.errormsg').text("Fields cannot be left blank");
+        }
+        
+        $("#form").trigger("reset");
       }
     };
 
     $.ajax(settings).done(function (response) {
-      for (let i = 0; i < response.length; i++) {
-      const logininfo = response[i];
-      if (logininfo.username === username.value && logininfo.password === password.value) {
-      $('.successfulmsg').show();
-      $("#name").text("Welcome " + username.value);
-      setTimeout(function () {
-      $(".animation").hide();
-      }, 5000);
-      break;
+      response.map(account => {
+        let usernameValue = account.username;
+        let passwordValue = account.password;
+      
+      if (username === usernameValue && password === passwordValue) {
+        $('.successfulmsg').show();
+        setTimeout(function () {
+          $(".animation").hide();
+        }, 5000);
+        $(".name").text("Welcome " + usernameValue);
+        console.log(account);
+        
       }
-      else {
-      setError(submit, "Username or password is invalid");
+      else if (response.username != username || response.password != password){
+        $('.errormsg').text("Username or password is incorrect");
       }
+      else if (usernameValue === "" || usernameValue === "") {
+        $('.errormsg').text("Username or password is empty");
       }
+    
   });
 });
+})	
 })
