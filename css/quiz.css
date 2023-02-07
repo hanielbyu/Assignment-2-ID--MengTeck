@@ -21,10 +21,14 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: 0.3s ease;
+
 }
 
 
-.ibox.activeInfo{
+.ibox.activeInfo,
+.qbox.activeQuiz,
+.rbox.activeResult{
     z-index: 5;
     opacity: 1;
     pointer-events: auto;
@@ -97,6 +101,7 @@ body{
     height: 40px;
     width: 100px;
     border: none;
+    outline: none;
     background: linear-gradient(to left,#898989,#a1a1a1, #989898);
     background-size: 200%;
     color: white;
@@ -173,6 +178,14 @@ body{
     user-select: none;
 }
 
+.qbox header .timeli{
+     position: absolute;
+     bottom: 0px;
+     left: 0px;
+     height: 3px;
+     background: #f4774a;
+}
+
 .qbox section{
     padding: 25px 30px 20px 30px;
     background: white;
@@ -235,6 +248,21 @@ section .optionli .option:hover{
     border-color:#ef1915 ;
     background: rgb(251, 208, 199);
 }
+.optionli .option.correct{
+    color: rgb(11, 108, 0);
+    border-color:#87ee6b ;
+    background: rgb(234, 255, 216);
+}
+
+.optionli .option.incorrect{
+    color: rgb(150, 28, 9);
+    border-color:#ef1915 ;
+    background: rgb(251, 208, 199);
+}
+
+.optionli .option.disabled{
+    pointer-events: none;
+}
 
 .qbox footer{
     height: 60px;
@@ -256,6 +284,7 @@ footer .totalqn span p{
 
 
 footer .next_button{
+    display: none;
     height: 40px;
     padding:  0 13px;
     font-size: 19px;
@@ -286,6 +315,7 @@ footer .next_button:hover{
     flex-direction: column;
     justify-content: space-between;
     z-index: -4;
+    
 }
 
 
