@@ -46,7 +46,7 @@ label {
 }
 #form {
     width: 270px;
-    height: 280px;
+    height: 300px;
     margin: 15vh auto 0 auto;
     background-color: white;
     padding: 30px;
@@ -143,28 +143,7 @@ small, a {
     font-size: 12px;
     height: 13px;
 }
-.title {
-    color: white;
-    font-size: 45px;
-    line-height: 80px;
-    padding: 0 100px;
-    font-weight: bold;
-}   
-.checkbtn {
-    color: white;
-    font-size: 30px;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-}
-#check {
-    display: none;
-}
-#signin {
-    color: palevioletred;
-}
+
 @media (max-width: 952px){
     
     .title {

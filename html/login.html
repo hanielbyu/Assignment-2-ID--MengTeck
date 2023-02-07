@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/stylelogin.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <title>Login</title>
 </head>
 <body>
@@ -27,12 +28,12 @@
             <small>New to Insight?</small><a href="/html/Signup.html">Sign up</a>
             <div class="signin">
                 <button id="submit">Login</button> 
+                <div id="loadingbar">
+                   <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_8omwqqyu.json"  background="transparent"  speed="1"  style="width: 300px; height: 0px;"  loop  autoplay></lottie-player>
+                </div>
                 <div class="errormsg"></div>
             </div>
-            <div id="loadingbar">
-                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<lottie-player src="https://assets4.lottiefiles.com/private_files/lf30_bunihjav.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop controls autoplay></lottie-player>
-            </div>
+           
          </form>
     </main>
     <div class="successfulmsg">
@@ -40,7 +41,6 @@
             <h3>Login Successfully</h3>
             <div class="name"></div>
             <div class="animation">
-                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
                 <lottie-player src="https://assets1.lottiefiles.com/private_files/lf30_siy7b69y.json" 
                  background="transparent" 
                   speed="0.8"  
@@ -52,7 +52,6 @@
                    </button></a>
                 </div>
              </div>
-             <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
              <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
              <script src="/js/loginAPI.js"></script>
 </body>

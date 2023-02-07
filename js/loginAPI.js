@@ -3,7 +3,7 @@ const submit = document.getElementById('submit');
 $(document).ready(function() {
   const APIKEY = "63b64979969f06502871aa45";
   $('.successfulmsg').hide();
-
+  // $('#loadingbar').hide();
   $("#submit").on("click", function(e) {
     e.preventDefault();
 
@@ -24,7 +24,12 @@ $(document).ready(function() {
         if (username === "" || password === "") {
           $('.errormsg').text("Fields cannot be left blank");
         }
-        
+        else {
+          $('#loadingbar').show();
+          setTimeout(function () {
+            $(".animation").hide();
+          }, 1000);
+        }
         $("#form").trigger("reset");
       }
     };
