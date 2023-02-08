@@ -1,57 +1,57 @@
 let questions = [
     {
         numb: 1,
-        question: "Fill Questions here yeh1?",
-        answer: "Insert choice here1",
+        question: "What is the name of the tallest mountain in the world?",
+        answer: "Mount Everest",
         options:[
-            "Insert choice here",
-            "Insert choice here",
-            "Insert choice here",
-            "Insert choice here1"    
+            "Mount Kilimanjaro",
+            "Mount Evenest",
+            "Mount Fiji",
+            "Mount Everest"    
         ]
     },
     {
         numb: 2,
-        question: "Fill Questions here yeh2?",
-        answer: "Insert choice here1",
+        question: "Which country has the largest population in the world?",
+        answer: "China",
         options:[
-            "Insert choice here",
-            "Insert choice here",
-            "Insert choice here",
-            "Insert choice here1"    
+            "China",
+            "U.S.A",
+            "India",
+            "Russia"    
         ]
     },
     {
         numb: 3,
-        question: "Fill Questions here yeh3?",
-        answer: "Insert choice here1",
+        question: "What is the name of the longest river in Africa?",
+        answer: "The Nile River",
         options:[
-            "Insert choice here",
-            "Insert choice here",
-            "Insert choice here1",
-            "Insert choice here"    
+            "Yangtze River",
+            "Amazon River",
+            "The Nile River",
+            "Mississippi River"    
         ]
     },
     {
         numb: 4,
-        question: "Fill Questions here yeh4?",
-        answer: "Insert choice here1",
+        question: "What American city is the Golden Gate Bridge located in?",
+        answer: "San Francisco",
         options:[
-            "Insert choice here",
-            "Insert choice here1",
-            "Insert choice here",
-            "Insert choice here"    
+            "New York",
+            "San Francisco",
+            "Chicago",
+            "Texas"    
         ]
     },
     {
         numb: 5,
-        question: "Fill Questions here yeh5?",
-        answer: "Insert choice here1",
+        question: "What is the name of the smallest country in the world?",
+        answer: "The Vatican City",
         options:[
-            "Insert choice here1",
-            "Insert choice here",
-            "Insert choice here",
-            "Insert choice here"    
+            "The Vatican City",
+            "Jeju Island",
+            "Singapore",
+            "Hawaii"    
         ]
     }
 ];

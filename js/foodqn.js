@@ -1,57 +1,57 @@
 let questions = [
     {
         numb: 1,
-        question: "Fill Questions here yeh1?",
-        answer: "Insert choice here1",
+        question: "What is the most eaten food in the world?",
+        answer: "Rice",
         options:[
-            "Insert choice here",
-            "Insert choice here",
-            "Insert choice here",
-            "Insert choice here1"    
+            "Chicken",
+            "Rice",
+            "Eggs",
+            "Noodles"    
         ]
     },
     {
         numb: 2,
-        question: "Fill Questions here yeh2?",
-        answer: "Insert choice here1",
+        question: "What fruit has been named the “King of Fruit”?",
+        answer: "Durian",
         options:[
-            "Insert choice here",
-            "Insert choice here",
-            "Insert choice here",
-            "Insert choice here1"    
+            "Pineapple",
+            "Banana",
+            "Apple",
+            "Durian"    
         ]
     },
     {
         numb: 3,
-        question: "Fill Questions here yeh3?",
-        answer: "Insert choice here1",
+        question: "In what country was the Caesar salad invented?",
+        answer: "Mexico",
         options:[
-            "Insert choice here",
-            "Insert choice here",
-            "Insert choice here1",
-            "Insert choice here"    
+            "Mexico",
+            "Greece",
+            "Italy",
+            "Turkey"    
         ]
     },
     {
         numb: 4,
-        question: "Fill Questions here yeh4?",
-        answer: "Insert choice here1",
+        question: "In what country were French fries invented?",
+        answer: "Belgium",
         options:[
-            "Insert choice here",
-            "Insert choice here1",
-            "Insert choice here",
-            "Insert choice here"    
+            "France",
+            "Belgium",
+            "U.S.A",
+            "Canada"    
         ]
     },
     {
         numb: 5,
-        question: "Fill Questions here yeh5?",
-        answer: "Insert choice here1",
+        question: "In what country was the world’s first chocolate bar created?",
+        answer: "England",
         options:[
-            "Insert choice here1",
-            "Insert choice here",
-            "Insert choice here",
-            "Insert choice here"    
+            "Switzerland",
+            "Jamaica",
+            "U.S.A",
+            "England"    
         ]
     }
 ];

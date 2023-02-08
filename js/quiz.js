@@ -1,3 +1,4 @@
+const ground_img = document.querySelector(".ground");
 const start_btn = document.querySelector(".start button");
 const info_box = document.querySelector(".ibox");
 const exit_btn = info_box.querySelector(".button_rule .quit");
@@ -9,6 +10,8 @@ const timeLine = quiz_box.querySelector("header .timeli");
 
 start_btn.onclick = ()=>{
     info_box.classList.add("activeInfo");
+    start_btn.style.display = "none";
+    ground_img.style.opacity = "0"
 }
 
 exit_btn.onclick = ()=>{
@@ -184,6 +187,23 @@ function startTimerLine(time){
     }
 }
 
+
+var x = window.matchMedia("(max-width: 700px)")
+mediaTimerLine(x) // Call listener function at run time
+
+
+function mediaTimerLine(x) {
+    counterLine = setInterval(timer, 20);
+    function timer(){
+        time += 1;
+        timeLine.style.width = time +"px";     
+        if(time > 549 ){
+            clearInterval(counterLine);
+        }
+    }
+
+}
+    
 
 
 

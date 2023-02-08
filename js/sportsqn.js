@@ -1,57 +1,57 @@
 let questions = [
     {
         numb: 1,
-        question: "Fill Questions here yeh1?",
-        answer: "Insert choice here1",
+        question: "What’s the national sport of Canada?",
+        answer: "Lacrosse",
         options:[
-            "Insert choice here",
-            "Insert choice here",
-            "Insert choice here",
-            "Insert choice here1"    
+            "Lacrosse",
+            "Rugby",
+            "Tennis",
+            "Golf"    
         ]
     },
     {
         numb: 2,
-        question: "Fill Questions here yeh2?",
-        answer: "Insert choice here1",
+        question: "In what game is “love” a score?",
+        answer: "Tennis",
         options:[
-            "Insert choice here",
-            "Insert choice here",
-            "Insert choice here",
-            "Insert choice here1"    
+            "Football",
+            "Lacrosse",
+            "Badminton",
+            "Tennis"    
         ]
     },
     {
         numb: 3,
-        question: "Fill Questions here yeh3?",
-        answer: "Insert choice here1",
+        question: "What is a soccer field called?",
+        answer: "Pitch",
         options:[
-            "Insert choice here",
-            "Insert choice here",
-            "Insert choice here1",
-            "Insert choice here"    
+            "Grass",
+            "Pitch",
+            "Court",
+            "Field"    
         ]
     },
     {
         numb: 4,
-        question: "Fill Questions here yeh4?",
-        answer: "Insert choice here1",
+        question: "What team does LeBron James play for?",
+        answer: "Los Angeles Lakers",
         options:[
-            "Insert choice here",
-            "Insert choice here1",
-            "Insert choice here",
-            "Insert choice here"    
+            "Miami Heat",
+            "Boston Celtics",
+            "Los Angeles Lakers",
+            "Cleveland Cavaliers"    
         ]
     },
     {
         numb: 5,
-        question: "Fill Questions here yeh5?",
-        answer: "Insert choice here1",
+        question: "What type of race is the Tour de France?",
+        answer: "Bicycle race",
         options:[
-            "Insert choice here1",
-            "Insert choice here",
-            "Insert choice here",
-            "Insert choice here"    
+            "Triathlon race",
+            "Rally race",
+            "100m Race",
+            "Bicycle race"    
         ]
     }
 ];

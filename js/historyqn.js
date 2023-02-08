@@ -2,57 +2,57 @@
 let questions = [
     {
         numb: 1,
-        question: "Fill Questions here yeh1?",
-        answer: "Insert choice here1",
+        question: "What was Singapore originally known as?",
+        answer: "Temasek",
         options:[
-            "Insert choice here",
-            "Insert choice here",
-            "Insert choice here",
-            "Insert choice here1"    
+            "Singapore",
+            "Lion City",
+            "Singapura",
+            "Temasek"    
         ]
     },
     {
         numb: 2,
-        question: "Fill Questions here yeh2?",
-        answer: "Insert choice here1",
+        question: "Which European is the founder of modern Singapore in 1819?",
+        answer: "Sir Stamford Raffles",
         options:[
-            "Insert choice here",
-            "Insert choice here",
-            "Insert choice here",
-            "Insert choice here1"    
+            "Sir Stamford Waffles",
+            "Sir Stamford Raffles",
+            "Sir Stanley Raffles",
+            "Sir Bradford Raffles"    
         ]
     },
     {
         numb: 3,
-        question: "Fill Questions here yeh3?",
-        answer: "Insert choice here1",
+        question: "In which year did Singapore fall to the Japanese in World War Two?",
+        answer: "1942",
         options:[
-            "Insert choice here",
-            "Insert choice here",
-            "Insert choice here1",
-            "Insert choice here"    
+            "1940",
+            "1941",
+            "1942",
+            "1943"    
         ]
     },
     {
         numb: 4,
-        question: "Fill Questions here yeh4?",
-        answer: "Insert choice here1",
+        question: "What was the name that the Japanese gave to Singapore after the British surrender?",
+        answer: "Syonan-to",
         options:[
-            "Insert choice here",
-            "Insert choice here1",
-            "Insert choice here",
-            "Insert choice here"    
+            "Silento",
+            "Syonan-to",
+            "Arigatou",
+            "Sayang-to"    
         ]
     },
     {
         numb: 5,
-        question: "Fill Questions here yeh5?",
-        answer: "Insert choice here1",
+        question: "Who was the first president of the Republic of Singapore?",
+        answer: "Yusof bin Ishak",
         options:[
-            "Insert choice here1",
-            "Insert choice here",
-            "Insert choice here",
-            "Insert choice here"    
+            "Yusof bin Ishak",
+            "Lee Hsien Loong",
+            "Sang Nila Utama",
+            "Lee Kuan Yew"    
         ]
     }
 ];
