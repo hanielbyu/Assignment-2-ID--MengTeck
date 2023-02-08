@@ -13,7 +13,9 @@ body{
     background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.6)),url(/Images/home.jpg);
     background-position: center;
     background-size: cover;
-    box-sizing: border-box;
+    box-sizing: border-box;;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .start, .ibox, .qbox, .rbox{
@@ -364,4 +366,14 @@ footer .next_button:hover{
 .rbox .rebtn button:hover{
     background-position: right;
 
+}
+
+
+
+@media screen and (max-width: 685px){
+    .ibox{
+        position: fixed;
+        width: 370px;;
+    }
+    
 }
