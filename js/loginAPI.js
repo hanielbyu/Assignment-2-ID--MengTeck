@@ -38,6 +38,7 @@ $(document).ready(function() {
       response.map(account => {
         let usernameValue = account.username;
         let passwordValue = account.password;
+        let id = account._id;
       
       if (username === usernameValue && password === passwordValue) {
         $('.successfulmsg').show();
@@ -46,7 +47,9 @@ $(document).ready(function() {
         }, 5000);
         $(".name").text("Welcome " + usernameValue);
         console.log(account);
-        sessionStorage.setItem("id", JSON.stringify(response._id));
+        console.log("this is", id);
+        sessionStorage.setItem("id", JSON.stringify(id));
+        console.log("YOOO", sessionStorage.getItem("id"))
       }
       else if (username != usernameValue || password != passwordValue){
         $('.errormsg').text("Username or password is incorrect");
