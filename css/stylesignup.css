@@ -17,15 +17,18 @@ nav {
     background: transparent;
 }
 .icon {
-    width: 110px;
+    width: 100px;
     cursor: pointer;
     padding-top: 10px;
     transition: 0.1s;
 
 }
+
 .icon:hover {
-    width: 150px;
+    width: 103px;
 }
+
+
 .title {
     color: white;
     font-size: 45px;
