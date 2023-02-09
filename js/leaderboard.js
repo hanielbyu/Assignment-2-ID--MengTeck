@@ -4,7 +4,7 @@ $(document).ready(function() {
     let settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://mtinteractivedev-900a.restdb.io/rest/contact",
+        "url": "https://mtinteractivedev-900a.restdb.io/rest/contact?q={}&sort=score&dir=-1",
         "method": "GET",
         "headers": {
           "content-type": "application/json",
@@ -14,9 +14,19 @@ $(document).ready(function() {
       }
       
       $.ajax(settings).done(function (response) {
-        content = `${content}<tr id='${response[i]._id}'><td>${response[i].name}</td>
-        <td>${response[i].score}</td>`
-
-        $("#table tbody").html(content);
+        limit = 3;
+        let content = "";
+        for (var i = 0; i < response.length && i < limit; i++) {  
+          //[METHOD 2]
+          //using our template literal method using backticks
+          //take note that we can't use += for template literal strings
+          //we use ${content} because -> content += content 
+          //we want to add on previous content at the same time
+          content = `${content}<tr id='${response[i]._id}'><td>${ i + 1}</td><td>${response[i].username}</td>
+          <td>${response[i].score}</td>`;
+        }
+        $("#leaderboard-list tbody").html(content);
+      
       });
+      
 })

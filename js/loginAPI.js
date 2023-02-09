@@ -46,6 +46,7 @@ $(document).ready(function() {
         }, 5000);
         $(".name").text("Welcome " + usernameValue);
         console.log(account);
+        sessionStorage.setItem("Account", JSON.stringify(response));
         
       }
       else if (response.username != username || response.password != password){

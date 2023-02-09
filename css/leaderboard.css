@@ -14,15 +14,16 @@ h5 {
     text-decoration: underline;
 }
 #leaderboard {
-    text-align: center;
-    margin: 25vh auto 0 auto;
-}
-#table {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    margin: 25vh auto 0 auto;
+}
+#leaderboard-list {
     border-spacing: 0; 
 }
+
 th, td {
     padding: 10px;
     border: 1px solid rgba(0,0,0);
