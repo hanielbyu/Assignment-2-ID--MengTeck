@@ -29,13 +29,14 @@ body{
     align-items: center;
 }
 .icon{
-    width: 120px;
+    margin-left: 40px;
+    width: 100px;
     cursor: pointer;
     padding-top: 10px;
     transition: 0.1s;
 }
 .icon:hover{
-    width: 123px;
+    width: 103px;
 }
 .menu-logo{
     position: absolute;
@@ -83,7 +84,7 @@ nav ul li:hover::after{
 nav ul li a{
     text-decoration: none;
     color: whitesmoke;
-    font-size: 17px;
+    font-size: 15px;
     letter-spacing: 1px;
     transition: 0.4s;
 }
@@ -180,12 +181,12 @@ nav ul li a{
     }
     
     .icon{
-        width: 120px;
+        width: 100px;
     }
 }
 @media screen and (max-width: 631px){
     .icon{
-        width: 120px;
+        width: 100px;
     }
     .row{
         display: flex;

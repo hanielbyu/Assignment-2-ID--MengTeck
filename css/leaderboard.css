@@ -6,8 +6,16 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     padding-left: 8%;
-    padding-right: 8%;
 }
+
+.icon{
+    margin-left: -90px;
+}
+
+.navbar nav ul{
+    text-align: right;
+}
+
 h5 {
     font-weight: bold;
     color: yellow;

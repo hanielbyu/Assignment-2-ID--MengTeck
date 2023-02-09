@@ -13,13 +13,14 @@ body {
     height: 100vh;
 }
 .icon {
+    margin-left: -20px;
     width: 100px;
     cursor: pointer;
     padding-top: 10px;
     transition: 0.1s;
 }
 .icon:hover {
-    width: 150px;
+    width: 103px;
 }
 label {
     font-weight: bold;
