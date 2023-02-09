@@ -34,34 +34,13 @@ let counter;
 let counterLine;
 let timeValue = 10;
 let widthValue = 0;
-let userScore = 0;
+let userScore = 0;  // THE SCORE VALUE of the user Value will change according to the score of the quiz
 
 
 const next_btn =  quiz_box.querySelector(".next_button");
 const result_box = document.querySelector(".rbox");
 const restart_quiz = result_box.querySelector(".rebtn .restart")
 const quit_quiz = result_box.querySelector(".rebtn .quit")
-
-// restart_quiz.onclick = ()=>{
-//     quiz_box.classList.add("activeQuiz");
-//     result_box.classList.remove("activeResult");
-//     let que_count = 0;
-//     let que_numb = 1;
-//     let timeValue = 10;
-//     let widthValue = 0;
-//     let userScore = 0;
-//     showQuestions(que_count);
-//     queCounter(que_numb)
-//     clearInterval(counter);
-//     startTimer(timeValue);
-//     clearInterval(counterLine);
-//     startTimerLine(widthValue);
-//     next_btn.style.display = "none";  
-// }
-
-quit_quiz.onclick = ()=>{
-    // window.location.href("browse.html");
-}
 
 next_btn.onclick = ()=>{
     if(que_count < questions.length - 1){
