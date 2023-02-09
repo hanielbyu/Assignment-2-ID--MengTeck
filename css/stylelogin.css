@@ -78,7 +78,7 @@ small, a {
     text-align: left;
 }
 
-.Login button{
+.login button{
     display: block;
     color: #fff;
     text-align: center;
@@ -95,7 +95,7 @@ small, a {
 }
 
 
-.Login button:hover {
+.login button:hover {
     background-position: right;
     padding: 8px 72px;
     margin-left: 53px;

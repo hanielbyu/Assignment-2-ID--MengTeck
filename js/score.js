@@ -1,37 +1,32 @@
-let account = JSON.parse(sessionStorage.getItem("Account"));
+// updating points to restdb
+let score = JSON.parse(sessionStorage.getItem("score"));
 
-$(document).ready(function () {
-    //what kind of interface we want at the start 
-    const APIKEY = "63b64979969f06502871aa45";
-    //[STEP 1]: Create our submit form listener
-    $("#submit").on("click", function (e) {
-      //prevent default action of the button 
-      e.preventDefault();
+$(document).ready(function() {
+   let username = JSON.parse(sessionStorage.getItem("username"));
+   score = 10;
+   $(".restart").on("click", function(e) {
+      const APIKEY = "63b64979969f06502871aa45";
+   let jsondata = {"score": score};
+   let settings = {  "async": true,
+     "crossDomain": true,
+     "url": `https://mtinteractivedev-900a.restdb.io/rest/contact/${username}`,
+    "method": "PUT",
+       "headers": {
+          "content-type": "application/json",
+          "x-apikey": APIKEY,
+          "cache-control": "no-cache"
+        },
+         "processData": false,
+          "data": JSON.stringify(jsondata)
+         }
       
-        //[STEP 2]: let's retrieve form data
-        //for now we assume all information is valid
-        //you are to do your own data validation
-        let username = $("#username").val();
-        let email = $("#email").val();
-        let password = $("#password1").val();
-    
-        //[STEP 3]: get form values when user clicks on send
-        //Adapted from restdb api
-        let jsondata = {
-          "username": username,
-          "email": email,
-          "password" : password,
-          "score" : 0
-        };
-    
-        
-
-        $.ajax(settings).done(function (response) {
-          console.log(response);
-        });
-  
-    });
+  $.ajax(settings).done(function (response) {
+   console.log(response);
   })
+   })
+   
+})
+      
     
     
     

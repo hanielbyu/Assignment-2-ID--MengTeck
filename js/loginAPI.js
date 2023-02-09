@@ -4,7 +4,7 @@ $(document).ready(function() {
   const APIKEY = "63b64979969f06502871aa45";
   $('.successfulmsg').hide();
   // $('#loadingbar').hide();
-  $("#submit").on("click", function(e) {
+  $(".login").on("click", function(e) {
     e.preventDefault();
 
     const username = $("#username").val();
@@ -46,15 +46,13 @@ $(document).ready(function() {
         }, 5000);
         $(".name").text("Welcome " + usernameValue);
         console.log(account);
+        sessionStorage.setItem("username", JSON.stringify(usernameValue));
       }
       else if (username != usernameValue || password != passwordValue){
         $('.errormsg').text("Username or password is incorrect");
       }
-      else if (usernameValue === "" || usernameValue === "") {
-        $('.errormsg').text("Username or password is empty");
-      }
-    
+
   });
 });
-})	
-})
+});	
+});

@@ -102,11 +102,13 @@ function optionSelected(answer){
                 }
             }
     }
+    sessionStorage.setItem("score", userScore);
 
     for(let i = 0; i < allOptions; i++){
         option_list.children[i].classList.add("disabled");
     }
     next_btn.style.display = "block";
+
 }
 
 
@@ -191,3 +193,5 @@ function queCounter(index){
     let totalQuesCountTag = '<span><p>'+ index +'</p>of<p>'+ questions.length +'</p>Questions</span>';
     bottom_ques_counter.innerHTML = totalQuesCountTag;
 }
+
+

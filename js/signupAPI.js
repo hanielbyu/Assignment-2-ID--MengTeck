@@ -4,7 +4,7 @@ $(document).ready(function () {
   const APIKEY = "63b64979969f06502871aa45";
   $('.successfulmsg').hide();
   //[STEP 1]: Create our submit form listener
-  $("#submit").on("click", function (e) {
+  $("#signup").on("click", function (e) {
     //prevent default action of the button 
     e.preventDefault();
     
