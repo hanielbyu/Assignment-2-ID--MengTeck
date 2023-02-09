@@ -28,7 +28,7 @@ $(document).ready(function () {
       let settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://mtinteractivedev-900a.restdb.io/rest/contact?max=2",
+        "url": "https://mtinteractivedev-900a.restdb.io/rest/contact",
         "method": "POST", //[cher] we will use post to send info
         "headers": {
           "content-type": "application/json",
