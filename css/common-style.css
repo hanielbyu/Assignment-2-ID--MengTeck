@@ -124,10 +124,11 @@ nav ul li a{
         align-items: left;
         margin-left: -100%;
         transition: all 0.4s ease;
-        z-index: 50;
+        z-index: -4;
     }
     .mobile-menu{
         margin-left: 0%;
+        z-index: 0;
     }
     
     nav ul{
@@ -141,7 +142,7 @@ nav ul li a{
         font-size: 3em;
     }
     .icon{
-        z-index: 5;
+        z-index: 1;
     }
     
     .col2{
@@ -149,7 +150,7 @@ nav ul li a{
     }
     .menu-logo{
         display: block;
-        z-index: 52;
+        z-index: 5;
         
     }
     .icon{
@@ -172,6 +173,7 @@ nav ul li a{
     }
     button{
         margin-left: 100px;
+        z-index: 30;
     }
     
     .icon{
