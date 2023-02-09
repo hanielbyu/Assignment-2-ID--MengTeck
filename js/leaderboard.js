@@ -17,11 +17,7 @@ $(document).ready(function() {
         limit = 3;
         let content = "";
         for (var i = 0; i < response.length && i < limit; i++) {  
-          //[METHOD 2]
-          //using our template literal method using backticks
-          //take note that we can't use += for template literal strings
-          //we use ${content} because -> content += content 
-          //we want to add on previous content at the same time
+    
           content = `${content}<tr id='${response[i]._id}'><td>${ i + 1}</td><td>${response[i].username}</td>
           <td>${response[i].score}</td>`;
         }
