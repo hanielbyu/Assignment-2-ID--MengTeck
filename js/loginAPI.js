@@ -13,7 +13,7 @@ $(document).ready(function() {
     let settings = {
       "async": true,
       "crossDomain": true,
-      "url": "https://mtinteractivedev-900a.restdb.io/rest/contact?max=2",
+      "url": "https://mtinteractivedev-900a.restdb.io/rest/contact",
       "method": "GET",
       "headers": {
         "content-type": "application/json",
@@ -46,10 +46,8 @@ $(document).ready(function() {
         }, 5000);
         $(".name").text("Welcome " + usernameValue);
         console.log(account);
-        sessionStorage.setItem("Account", JSON.stringify(response));
-        
       }
-      else if (response.username != username || response.password != password){
+      else if (username != usernameValue || password != passwordValue){
         $('.errormsg').text("Username or password is incorrect");
       }
       else if (usernameValue === "" || usernameValue === "") {
