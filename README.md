@@ -35,12 +35,10 @@ In addition, you may also use this section to discuss plans for additional featu
 - Another feature idea
 
 ## Technologies Used
-
+- used jquery for login and sign up validation. https://jquery.com/  
+- used restdb to store login details and score for the quiz to diplay the leaderboard. https://restdb.io/
+- used lottie animation to show Sign up successful. https://lottiefiles.com/web-player?lottie_url=https%3A%2F%2Fassets2.lottiefiles.com%2Fpackages%2Flf20_niyfyoqs.json
 In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
-
-- [JQuery](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation.
-
 
 ## Testing
 
@@ -51,7 +49,19 @@ For any scenarios that have not been automated, test the user stories manually a
     2. Try to submit the empty form and verify that an error message about the required fields appears
     3. Try to submit the form with an invalid email address and verify that a relevant error message appears
     4. Try to submit the form with all inputs valid and verify that a success message appears.
-
+1. Sign Up form: 
+    1. Go to the "Sign up" page
+    2. Try to submit the empty form, an error message about the required fields appears
+    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
+    4. Try to type password and re enter password, if password word does not match. error message will show
+    5. when trying to input less than 8 characters for password, en error will appear
+    6. When email does not have @, an error message will appear.
+    7. Try to submit the form with all inputs valid and verify that a success message appears.
+1. Sign in form:
+    1. Go to the "Login" page
+    2. Try to submit the empty form and verify that an error message about the fields will appear.
+    3. Try to submit the form with an invalid username or password, an error message will appear
+    4. Try to submit the form with all inputs valid and verify that a success message appears.
 In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
 
 You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
