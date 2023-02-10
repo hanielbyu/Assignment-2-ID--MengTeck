@@ -114,7 +114,7 @@ nav ul li a{
         top: 0;
         left: 0;
         position: absolute;
-        background-color:   rgba(43, 43, 43, 0.568);
+        background-color:   rgba(28, 28, 28, 0.627);
         background-repeat: repeat;
         background-attachment: fixed;
         backdrop-filter: blur(9px);
@@ -172,10 +172,10 @@ nav ul li a{
     p{
         font-size: 15px;
     }
-    button{
+    /* button{
         margin-left: 100px;
         z-index: 30;
-    }
+    } */
     .Login button{
         margin-left: 55px;
     }
