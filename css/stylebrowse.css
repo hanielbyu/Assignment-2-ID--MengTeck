@@ -1,5 +1,5 @@
 body{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.6)),url(/images/home.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.6)),url(images/home.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -81,16 +81,16 @@ body{
     border: 1px solid #ccc;
 }
 .box1{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.15),rgba(0,0,0,0.15)) ,url(/images/history.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15),rgba(0,0,0,0.15)) ,url(images/history.jpg);
 }
 .box2{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.15),rgba(0,0,0,0.15)), url(/images/geography.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15),rgba(0,0,0,0.15)), url(images/geography.jpg);
 }
 .box3{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.15),rgba(0,0,0,0.15)), url(/images/sports.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15),rgba(0,0,0,0.15)), url(images/sports.jpg);
 }
 .box4{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.15),rgba(0,0,0,0.15)), url(/images/food.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15),rgba(0,0,0,0.15)), url(images/food.jpg);
 }
 
 @media screen and (max-width: 1210px) {
