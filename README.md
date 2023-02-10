@@ -42,7 +42,6 @@ Features1 - Responsive navbar with the use of Hamburger menu that slides a verti
 (Homepage)
 Feature1 - Shortcut cards to the quiz topics. This allows users to click a topic of interest alr from the home page (not available in Mobile view)
 Feature2 - Browse button that leads to the browsing trivia page. 
-
 Feature3 - Navbar is hoverable and leads to different pages of the website 
 
 (Browse page)

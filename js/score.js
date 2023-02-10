@@ -33,7 +33,7 @@ let id = JSON.parse(sessionStorage.getItem("id"));
   
       
   $.ajax(settings).done(function (response) {
-   console.log(response);
+      alert("Successfuly sent to leaderboard!");
   })
    })
    

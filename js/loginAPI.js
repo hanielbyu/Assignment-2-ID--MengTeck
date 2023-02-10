@@ -49,8 +49,6 @@ $(document).ready(function() {
           $(".animation").hide();
         }, 5000);
         $(".name").text("Welcome " + usernameValue);
-        sessionStorage.setItem("id", JSON.stringify(id));
-
         //set item to able to access on other pages
         sessionStorage.setItem("id", JSON.stringify(id));
         sessionStorage.setItem("username", JSON.stringify(usernameValue));
