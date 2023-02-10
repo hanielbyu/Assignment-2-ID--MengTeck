@@ -1,7 +1,7 @@
 const submit = document.getElementById('submit');
 // login validation to retrieve user data from restdb
 $(document).ready(function() {
-  const APIKEY = "63e4f31c478852088da67f37";
+  const APIKEY = "63b64979969f06502871aa45";
   $('.successfulmsg').hide();
   $('#loadingbar').hide();
   $(".login").on("click", function(e) {
@@ -13,7 +13,7 @@ $(document).ready(function() {
     let settings = {
       "async": true,
       "crossDomain": true,
-      "url": "https://interactivedev-a926.restdb.io/rest/contact",
+      "url": "https://mtinteractivedev-900a.restdb.io/rest/contact/contact",
       "method": "GET",
       "headers": {
         "content-type": "application/json",
