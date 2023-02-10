@@ -129,7 +129,7 @@ nav ul li a{
     }
     .mobile-menu{
         margin-left: 0%;
-        z-index: 4;
+        z-index: 15;
     }
     
     nav ul{
@@ -151,7 +151,7 @@ nav ul li a{
     }
     .menu-logo{
         display: block;
-        z-index: 5;
+        z-index: 16;
         
     }
     .icon{
