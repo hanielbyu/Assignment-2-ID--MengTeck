@@ -14,12 +14,12 @@ console.log(id)
    $(".restart").on("click", function(e) {
    e.preventDefault();
    let id = JSON.parse(sessionStorage.getItem("id"));
-   const APIKEY = "63e4f31c478852088da67f37";
+   const APIKEY = "63b64979969f06502871aa45";
    // updating points
    let jsondata = {"score": score};
    let settings = {  "async": true,
      "crossDomain": true,
-     "url": `https://interactivedev-a926.restdb.io/rest/contact/${id}`,
+     "url": `https://mtinteractivedev-900a.restdb.io/rest/contact/${id}`,
       "method": "PATCH",
       "headers": {
           "content-type": "application/json",
