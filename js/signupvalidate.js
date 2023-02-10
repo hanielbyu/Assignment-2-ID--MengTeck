@@ -54,18 +54,18 @@ const validateInputs = () => {
     }
     // validation for password input requirements
     if (password1Value === '') {
-        setError(password1, 'Password is required')
+        setError(password1, 'Password is required');
     } else if (password1Value.length < 8) {
-        setError(password1, 'Password must be at least 8 characters!')
+        setError(password1, 'Password must be at least 8 characters!');
     }
     else if (password1Value.search(/[A-Z]/) < 0) {
-        setError(password1, 'Password must contain at least one uppercase letter')
+        setError(password1, 'Password must contain at least one uppercase letter');
     }
     else if (password1Value.search(/[a-z]/) < 0) {
         setError(password1, 'Password must contain at least one lowercase letter');
     }
     else if (password1Value.search(/[0-9]/) < 0) {
-        setError(password1, 'Password must have at least a number')
+        setError(password1, 'Password must have at least a number');
     } 
      else {
         setSuccess(password1);
@@ -73,10 +73,10 @@ const validateInputs = () => {
 
     
     if (password2Value === '') {
-        setError(password2, 'Plese re-enter your password!')
+        setError(password2, 'Plese re-enter your password!');
     }
     else if (password1Value !== password2Value) {
-        setError(password2, "Passwords does not match!")
+        setError(password2, "Passwords does not match!");
     } 
     else {
         setSuccess(password2);
