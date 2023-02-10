@@ -142,16 +142,16 @@ button:hover{
     transition: 0.3s;
 }
 .box1{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.15),rgba(0,0,0,0.15)) ,url(images/history.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15),rgba(0,0,0,0.15)) ,url("https://hanielbyu.github.io/Assignment-2-ID--MengTeck/images/history.jpg");
 }
 .box2{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.15),rgba(0,0,0,0.15)), url(images/geography.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15),rgba(0,0,0,0.15)), url("https://hanielbyu.github.io/Assignment-2-ID--MengTeck/images/geography.jpg");
 }
 .box3{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.15),rgba(0,0,0,0.15)), url(images/sports.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15),rgba(0,0,0,0.15)), url("https://hanielbyu.github.io/Assignment-2-ID--MengTeck/images/sports.jpg");
 }
 .box4{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.15),rgba(0,0,0,0.15)), url(images/food.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15),rgba(0,0,0,0.15)), url("https://hanielbyu.github.io/Assignment-2-ID--MengTeck/images/food.jpg");
 }
 
 .box:hover{

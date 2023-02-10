@@ -3,7 +3,7 @@
     opacity: 1;
     width: 400px;
     height: 500px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.15),rgba(0,0,0,0.3)), url(images/sports.jpg);   
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15),rgba(0,0,0,0.3)), url("https://hanielbyu.github.io/Assignment-2-ID--MengTeck/images/sports.jpg");   
     background-size: cover;
     background-position: center;
     border-radius: 20px;
