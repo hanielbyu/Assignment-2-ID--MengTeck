@@ -64,8 +64,16 @@ Feature2 - Lottie animations next to header. develop sense of achieivement.
 Feature3 - scores can be updated or new users can be implemented and posted to the leaderboard 
 leaderboard will reflect the number of objects in the DB
 
-(MENG TECKvv) <<<< delete this// write below here
+(Login Page)
+Feature1 - Display username and password field
+Feature2 - Display popup msg to show successful msg when login successful
+Feature3 - Link to create account if user does not have credentails 
 
+(Signup Page)
+Feature1 - Display information needed for user to create account
+Feature2 - display error msg if user keys in wrong input when inputing the username, email
+Feature3 - displays green outline on field if user keys in correct input
+Feature4 - Will validate password requirements for upper case, lower case and numerical characters.
 
 
 
@@ -127,7 +135,19 @@ In this section, you should mention all of the languages, frameworks, libraries,
     2. check responsiveness of the page leaderboard table should shrink as width is smaller.
     3. Reload the page see if the lottie animations work.
 
-    (MENG TECKvv) <<<< delete this// write below here
+ 5. Sign Up form: 
+    1. Go to the "Sign up" page
+    2. Try to submit the empty form, an error message about the required fields appears
+    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
+    4. Try to type password and re enter password, if password word does not match. error message will show
+    5. when trying to input less than 8 characters for password, en error will appear
+    6. When email does not have @, an error message will appear.
+    7. Try to submit the form with all inputs valid and verify that a success message appears.
+6. Sign in form:
+    1. Go to the "Login" page
+    2. Try to submit the empty form and verify that an error message about the fields will appear.
+    3. Try to submit the form with an invalid username or password, an error message will appear
+    4. Try to submit the form with all inputs valid and verify that a success message appears.
 
 
  # Bugs:
