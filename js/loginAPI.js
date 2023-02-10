@@ -13,7 +13,7 @@ $(document).ready(function() {
     let settings = {
       "async": true,
       "crossDomain": true,
-      "url": "https://mtinteractivedev-900a.restdb.io/rest/contact/contact",
+      "url": "https://mtinteractivedev-900a.restdb.io/rest/contact",
       "method": "GET",
       "headers": {
         "content-type": "application/json",
@@ -49,13 +49,12 @@ $(document).ready(function() {
           $(".animation").hide();
         }, 5000);
         $(".name").text("Welcome " + usernameValue);
-        console.log(account);
         sessionStorage.setItem("id", JSON.stringify(id));
 
         //set item to able to access on other pages
         sessionStorage.setItem("id", JSON.stringify(id));
         sessionStorage.setItem("username", JSON.stringify(usernameValue))
-
+        console.log(id)
       }
       else if (username !== usernameValue || password !== passwordValue){
         $('.errormsg').text("Username or password is incorrect");

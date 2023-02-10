@@ -8,7 +8,6 @@ let score = JSON.parse(sessionStorage.getItem("score"));
 
 // retrieving id from current session login
 let id = JSON.parse(sessionStorage.getItem("id"));
-console.log(id)
    $(document).ready(function () {
 
    $(".restart").on("click", function(e) {
