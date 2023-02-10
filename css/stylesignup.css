@@ -96,9 +96,6 @@ nav {
     justify-content: center;
 }
 /* end */
-.errormsg {
-    color: red;
-}
 h3 {
     text-align: center;
 }
@@ -128,6 +125,9 @@ h3 {
     background: linear-gradient(to left,#ff9412,#EE5A24, #ffa812);
     background-position: right;
     transition: 0.3s;
+}
+.errormsg {
+    color: red;
 }
 .signup input:focus{
     outline: 0;
