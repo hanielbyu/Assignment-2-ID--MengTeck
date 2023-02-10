@@ -53,6 +53,12 @@
 <script src="/js/hamburger-menu.js"></script>
 <script>
     let username = JSON.parse(sessionStorage.getItem("username"))
-    document.getElementById("acc-username").textContent = "Welcome " + username;
+    if (username === null) {
+        $("#acc-username").hide();
+    }
+    else {
+        document.getElementById("acc-username").textContent = "Welcome " + username;    
+    }
+    
 </script>
 </html>
