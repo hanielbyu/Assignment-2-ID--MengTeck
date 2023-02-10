@@ -42,7 +42,7 @@ th {
     font-size: 25px;
     border: 1px solid rgba(0,0,0);
     background: wheat;
-    background: linear-gradient(90deg, rgb(239, 229, 188) 36%,rgb(249, 239, 157)) 100%);
+    background: linear-gradient(90deg, rgb(239, 229, 188) 36%,rgb(249, 239, 157)) 100%;
 }
 td {
     background: rgba(249, 249, 249, 0.878);
