@@ -163,7 +163,9 @@ small, a {
     font-size: 12px;
     height: 13px;
 }
-
+.errormsg {
+    color: red;
+}
 @media (max-width: 1212px){
     .icon{
         margin-left: 70px;

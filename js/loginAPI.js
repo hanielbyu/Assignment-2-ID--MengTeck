@@ -35,7 +35,7 @@ $(document).ready(function() {
     };
 
     $.ajax(settings).done(function (response) {
-      
+      $('#loadingbar').hide();
       response.map(accinfo => {
         // retrieve to check user input matches data in database
         let usernameValue = accinfo.username;
@@ -57,7 +57,7 @@ $(document).ready(function() {
         console.log(id)
       }
       else if (username !== usernameValue || password !== passwordValue){
-        $('.errormsg').text("Username or password is incorrect");
+        $('.errormsg').text("*Username or password is incorrect*");
       }
 
   });

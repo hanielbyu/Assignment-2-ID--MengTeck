@@ -28,7 +28,7 @@ let id = JSON.parse(sessionStorage.getItem("id"));
          "processData": false,
           "data": JSON.stringify(jsondata)
          }
-         console.log("goes here", score);
+
          
   
       
