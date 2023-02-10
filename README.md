@@ -24,7 +24,7 @@ Exit button will appear to head back to browse page.
 Leaderboard page is the page where it stores and displays the details of the account including the scores of that account
 the top scores will be sorted descending order Users can use this page to check out their scores of the user dislayed against other users inside the leaderboard. 
 
-(MENG TECKvv) <<<< delete this// write below here
+
 
 
 
@@ -127,7 +127,8 @@ In this section, you should mention all of the languages, frameworks, libraries,
     9. at the end of the quiz it will show the results of how many correct answers were clicked.
     10. Buttons name exit quiz and leaderboard should lead back to browse page and leaderboard page respectively
     11. Clicking buttons on leaderboard and exit quiz should commence the PATCH request tallying their score .
-    12. Head over to leaderboard page.
+    12. alert msg will show when score is updated to the database
+    13. Head over to leaderboard page.
 
 4. Leaderboard page:
     1. Try to find your user and (score*10) as score, on the leaderboard youll be ranked based on how much you scored for the quiz.
