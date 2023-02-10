@@ -103,6 +103,7 @@ function optionSelected(answer){
             }
     }
     sessionStorage.setItem("score", userScore);
+    console.log(userScore);
 
     for(let i = 0; i < allOptions; i++){
         option_list.children[i].classList.add("disabled");
@@ -118,6 +119,7 @@ function showResultBox(){
     quiz_box.classList.remove("activeQuiz");
     result_box.classList.add("activeResult");
     const scoreText = result_box.querySelector(".score");
+    sessionStorage.setItem("score", userScore);
     let scoreTag = '<span>You scored <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
     scoreText.innerHTML = scoreTag;
 
