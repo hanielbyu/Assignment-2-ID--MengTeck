@@ -8,36 +8,42 @@
     <script src="https://kit.fontawesome.com/1f84b97897.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/common-style.css">
     <link rel="stylesheet" href="/css/leaderboard.css">
-    <link rel="stylesheet" href="/css/normalize.css">
+    
 </head>
 <body>
-    <div class="contain">
+    <header>
         <div class="navbar">
-            <a href="/html/index.html"><img src="/Images/icon.png" class="icon"></a>
+            <a href="/html/index.html"><img src="/images/icon.png" class="icon"></a>
             <nav>
                 <ul>
-                    <li><a href="/html/index.html">HOME</a></li>
                     <li><a href="/html/browse.html">TRIVIA</a></li>
+                    <li><a href="/html/leaderboard.html">LEADERBOARD</a></li>
                     <li><a href="/html/login.html">LOGIN</a></li>
                 </ul>
             </nav>
             <img src="/Images/menu.png" class="menu-logo" alt="">
         </div>
+    </header>
     <main>
+        <div id="leaderboard-header">
+            <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_JydTvL1nes.json"  background="transparent"  speed="1"  style="width: 100px; height: 100px;"  loop  autoplay></lottie-player>
+            <h1>Leaderboard</h1><script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_JydTvL1nes.json"  background="transparent"  speed="1"  style="width: 100px; height: 100px;"  loop  autoplay></lottie-player>
+        </div>
        <div id="leaderboard">
         <table id="leaderboard-list">
         <thead>
             <th id="Rank">Rank</th>
             <th id="name">Name</th>
             <th id="score">Score</th>
-        </thead><br>
+        </thead>
+
         <tbody></tbody>
         </table>
        </div>
         
     </main>
 </body>
-    <script src="/js/hamburger-menu.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="/js/leaderboard.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/js/leaderboard.js"></script>
 </html>

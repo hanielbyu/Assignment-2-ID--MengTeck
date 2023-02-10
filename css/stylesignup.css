@@ -21,14 +21,10 @@ nav {
     cursor: pointer;
     padding-top: 10px;
     transition: 0.1s;
-
 }
-
 .icon:hover {
     width: 103px;
 }
-
-
 .title {
     color: white;
     font-size: 45px;
@@ -65,7 +61,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 .modal {
     background-color: rgb(255, 255, 255);
