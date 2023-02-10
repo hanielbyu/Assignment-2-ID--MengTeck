@@ -158,12 +158,6 @@ h3 {
     body {
         height: 100vh;
     }
-    .checkbtn {
-        display: block;
-    }
-    #check:checked ~ ul{
-        left: 0;
-    }
     #form {
         width: 280px;
         margin: 10vh auto 0 auto;
@@ -172,13 +166,11 @@ h3 {
         border-radius: 10px;
         font-size: 12px;
     }
-    #submit {
+    #signup {
         padding: 10px;
-        margin-top: 10px;
-        width: 35%;
+        width: 200px;
         border: none;
-        background-color: black;
-        color: white;
+
         border-radius: 10px; 
     }
     
