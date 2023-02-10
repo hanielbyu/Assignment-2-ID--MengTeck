@@ -64,8 +64,16 @@ Feature2 - Lottie animations next to header. develop sense of achieivement.
 Feature3 - scores can be updated or new users can be implemented and posted to the leaderboard 
 leaderboard will reflect the number of objects in the DB
 
-(MENG TECKvv) <<<< delete this// write below here
+(Login Page)
+Feature1 - Display username and password field
+Feature2 - Display popup msg to show successful msg when login successful
+Feature3 - Link to create account if user does not have credentails 
 
+(Signup Page)
+Feature1 - Display information needed for user to create account
+Feature2 - display error msg if user keys in wrong input when inputing the username, email
+Feature3 - displays green outline on field if user keys in correct input
+Feature4 - Will validate password requirements for upper case, lower case and numerical characters.
 
 
 
