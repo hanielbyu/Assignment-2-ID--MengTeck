@@ -17,16 +17,18 @@ nav {
     background: transparent;
 }
 .icon {
-    margin-left: 60px;
-    width: 110px;
+    width: 100px;
     cursor: pointer;
     padding-top: 10px;
     transition: 0.1s;
 
 }
+
 .icon:hover {
-    width: 150px;
+    width: 103px;
 }
+
+
 .title {
     color: white;
     font-size: 45px;
@@ -98,6 +100,8 @@ nav {
 /* end */
 h3 {
     text-align: center;
+    font-size: 17px;
+    margin-bottom: 10px;
 }
 .signup {
     display: flex;
@@ -108,23 +112,27 @@ h3 {
     display: block;
     font-size: 12px;
     padding: 12px;
-    width: 240px;
+    width: 90%;
 }
-#submit {
-    padding: 13px;
-    margin-top: 5px;
-    width: 260px;
+.LogUp button{
+    display: block;
+    color: #fff;
+    text-align: center;
     border: none;
-    cursor: pointer;
-    background: linear-gradient(to left,#ff9412,#EE5A24, #ffa812);
+    border-radius: 5px;
+    background: linear-gradient(to right,#ff823e, #fb3f00, #ff6f21 );
     background-size: 200%;
-    border-radius: 10px;
-    transition: 0.3s;
+    text-align: center;
+    text-decoration: none;
+    width: 300px;
+    height: 35px;
+    padding: 7px 70px;
+    cursor: pointer;
+    transition: 0.1s ;
 }
-#submit:hover {
-    background: linear-gradient(to left,#ff9412,#EE5A24, #ffa812);
+.LogUp button:hover {
     background-position: right;
-    transition: 0.3s;
+    padding: 8px 72px;
 }
 .errormsg {
     color: red;

@@ -1,11 +1,11 @@
 const submit = document.getElementById('submit');
 
 $(document).ready(function() {
-  const APIKEY = "63b64979969f06502871aa45";
+  const APIKEY = "63e4f31c478852088da67f37";
   $('.successfulmsg').hide();
   // $('#loadingbar').hide();
-  $("#submit").on("click", function(e) {
-    e.preventDefault();
+  $(".login").on("click", function(e) {
+  e.preventDefault();
 
     const username = $("#username").val();
     const password = $("#password").val();
@@ -13,7 +13,7 @@ $(document).ready(function() {
     let settings = {
       "async": true,
       "crossDomain": true,
-      "url": "https://mtinteractivedev-900a.restdb.io/rest/contact?max=2",
+      "url": "https://interactivedev-a926.restdb.io/rest/contact",
       "method": "GET",
       "headers": {
         "content-type": "application/json",
@@ -38,6 +38,7 @@ $(document).ready(function() {
       response.map(account => {
         let usernameValue = account.username;
         let passwordValue = account.password;
+        let id = account._id;
       
       if (username === usernameValue && password === passwordValue) {
         $('.successfulmsg').show();
@@ -46,16 +47,15 @@ $(document).ready(function() {
         }, 5000);
         $(".name").text("Welcome " + usernameValue);
         console.log(account);
-        
+        console.log("this is", id);
+        sessionStorage.setItem("id", JSON.stringify(id));
+        console.log("YOOO", sessionStorage.getItem("id"))
       }
-      else if (response.username != username || response.password != password){
+      else if (username != usernameValue || password != passwordValue){
         $('.errormsg').text("Username or password is incorrect");
       }
-      else if (usernameValue === "" || usernameValue === "") {
-        $('.errormsg').text("Username or password is empty");
-      }
-    
+
   });
 });
-})	
-})
+});	
+});

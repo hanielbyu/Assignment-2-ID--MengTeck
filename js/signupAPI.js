@@ -1,10 +1,10 @@
 //[STEP 0]: Make sure our document is A-OK
 $(document).ready(function () {
   //what kind of interface we want at the start 
-  const APIKEY = "63b64979969f06502871aa45";
+  const APIKEY = "63e4f31c478852088da67f37";
   $('.successfulmsg').hide();
   //[STEP 1]: Create our submit form listener
-  $("#submit").on("click", function (e) {
+  $("#signup").on("click", function (e) {
     //prevent default action of the button 
     e.preventDefault();
     
@@ -28,7 +28,7 @@ $(document).ready(function () {
       let settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://mtinteractivedev-900a.restdb.io/rest/contact?max=2",
+        "url": "https://interactivedev-a926.restdb.io/rest/contact",
         "method": "POST", //[cher] we will use post to send info
         "headers": {
           "content-type": "application/json",

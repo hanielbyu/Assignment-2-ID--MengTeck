@@ -1,0 +1,48 @@
+.ground{
+    padding: 70px 40px;
+    opacity: 1;
+    width: 400px;
+    height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15),rgba(0,0,0,0.3)), url(/Images/Food.jpg);     
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.groundtitle{
+    text-align: center;
+    font-size: 21px;
+    font-weight: 1500;
+    letter-spacing: 1.5px;
+    color: rgb(54, 54, 54);
+    padding: 0 30px;
+    background-color: white;
+    border-style:groove;
+    border-radius: 10px;
+    opacity: 0.7;
+    border: groove 4px rgb(44, 44, 44);
+    pointer-events: none;
+}
+
+@media screen and (max-width: 1212px){
+    .groundtitle h1{
+        margin-left: 0;
+        font-size: 40px;
+    }
+    .groundtitle{
+        height: 50px;
+    }
+    .start button{
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .ground{
+        height: 400px;
+        width: 350px;
+    }
+}

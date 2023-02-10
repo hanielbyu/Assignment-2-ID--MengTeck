@@ -7,9 +7,32 @@
     <title>Quiz</title>
     <link rel="stylesheet" href="/css/quiz.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="/css/common-style.css">
+    <link rel="stylesheet" href="/css/Sports.css">
+    <script defer src="/js/signupvalidate.js"></script>
 </head>
 <body>
-    <div class="start"><button>Start Quiz</button></div>
+    <div class="contain">
+        <div class="navbar">
+            <a href="/html/index.html"><img src="/Images/icon.png" class="icon"></a>
+            
+                <nav>
+                    <div class="navlink">
+                        <ul>
+                            <li><a href="/html/browse.html">TRIVIA</a></li>
+                            <li><a href="/html/leaderboard.html">LEADERBOARD</a></li>
+                            <li><a href="/html/login.html">LOGIN</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            
+        <img src="/Images/menu.png" class="menu-logo" alt="">
+    </div>
+
+    <div class="ground">
+        <div class="groundtitle"><h1>SPORTS</h1></div>
+        <div class="start"><button>Start Quiz</button></div>
+    </div>
 
     <div class="ibox">
         <div class="ititle">
@@ -23,7 +46,7 @@
                 <div class="info">5.  Your scores will be shown on the leaderboard.</div>
             </div>
         <div class="button_rule">
-            <button class="quit">Exit Quiz</button>
+            <a href="/html/browse.html"><button href="/html/browse.html" class="quit">Exit Quiz</button></a>
             <button class="restart">Continue</button>
         </div>
     </div>    
@@ -83,13 +106,13 @@
         </span>
         </div>
         <div class="rebtn">
-            <button class="quit">Exit Quiz</button>
-            <button class="restart">Replay Quiz</button>
+            <a href="/html/browse.html"><button href="/html/browse.html" class="quit">Exit Quiz</button></a>
+            <a href="/html/leaderboard.html"><button class="restart">Leaderboard</button></a>
         </div>
     </div>
     
-    <script src="/js/questions.js"></script>
+    <script src="/js/sportsqn.js"></script>
     <script src="/js/quiz.js"></script>
-    
+    <script src="/js/hamburger-menu.js"></script>
 </body>
 </html>

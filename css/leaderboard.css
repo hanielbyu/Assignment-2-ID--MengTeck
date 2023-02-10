@@ -6,23 +6,32 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     padding-left: 8%;
-    padding-right: 8%;
 }
+
+.icon{
+    margin-left: -90px;
+}
+
+.navbar nav ul{
+    text-align: right;
+}
+
 h5 {
     font-weight: bold;
     color: yellow;
     text-decoration: underline;
 }
 #leaderboard {
-    text-align: center;
-    margin: 25vh auto 0 auto;
-}
-#table {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    margin: 25vh auto 0 auto;
+}
+#leaderboard-list {
     border-spacing: 0; 
 }
+
 th, td {
     padding: 10px;
     border: 1px solid rgba(0,0,0);

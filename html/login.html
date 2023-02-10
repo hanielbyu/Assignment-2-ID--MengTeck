@@ -4,14 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/stylelogin.css">
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="stylesheet" href="/css/common-style.css">
+    <link rel="stylesheet" href="/css/stylelogin.css"> 
+    
     <title>Login</title>
 </head>
 <body>
-    <nav>
-        <a href="/html/index.html"><img src="/images/icon.png" class="icon"></a>
-    </nav>
+    <div class="contain">
+        <div class="navbar">
+            <a href="/html/index.html"><img src="/Images/icon.png" class="icon"></a>
+            
+                <nav>
+                    <div class="navlink">
+                        <ul>
+                            <li><a href="/html/index.html">HOME</a></li>
+                            <li><a href="/html/browse.html">TRIVIA</a></li>
+                            <li><a href="/html/leaderboard.html">LEADERBOARD</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            
+        <img src="/Images/menu.png" class="menu-logo" alt="">
+    </div>
     <main>
         <form id="form" action="\">
             <h3>Login</h3>
@@ -25,9 +39,9 @@
                 <input id="password" id="password" type="password">
                 <div class="error"></div>
             </div>
-            <small>New to Insight?</small><a href="/html/Signup.html">Sign up</a>
-            <div class="signin">
-                <button id="submit">Login</button> 
+            <small>New to Insight? </small><a href="/html/Signup.html">Sign up</a>
+            <div class="signin logbutn">
+                <div class="login"><button>Login</button></div>
                 <div id="loadingbar">
                     <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_8omwqqyu.json"  background="transparent"  speed="1"  style="width: 300px; height: 0px;"  loop  autoplay></lottie-player>
                 </div>
@@ -52,7 +66,11 @@
                    </button></a>
                 </div>
              </div>
+             <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
              <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
              <script src="/js/loginAPI.js"></script>
+             <script defer src="/js/loginvalidate.js"></script>
 </body>
+
+<script src="/js/hamburger-menu.js"></script>
 </html>

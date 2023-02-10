@@ -1,3 +1,4 @@
+const ground_img = document.querySelector(".ground");
 const start_btn = document.querySelector(".start button");
 const info_box = document.querySelector(".ibox");
 const exit_btn = info_box.querySelector(".button_rule .quit");
@@ -9,6 +10,8 @@ const timeLine = quiz_box.querySelector("header .timeli");
 
 start_btn.onclick = ()=>{
     info_box.classList.add("activeInfo");
+    start_btn.style.display = "none";
+    ground_img.style.opacity = "0"
 }
 
 exit_btn.onclick = ()=>{
@@ -31,34 +34,13 @@ let counter;
 let counterLine;
 let timeValue = 10;
 let widthValue = 0;
-let userScore = 0;
+let userScore = 0;  // THE SCORE VALUE of the user Value will change according to the score of the quiz
 
 
 const next_btn =  quiz_box.querySelector(".next_button");
 const result_box = document.querySelector(".rbox");
 const restart_quiz = result_box.querySelector(".rebtn .restart")
 const quit_quiz = result_box.querySelector(".rebtn .quit")
-
-restart_quiz.onclick = ()=>{
-    quiz_box.classList.add("activeQuiz");
-    result_box.classList.remove("activeResult");
-    let que_count = 0;
-    let que_numb = 1;
-    let timeValue = 10;
-    let widthValue = 0;
-    let userScore = 0;
-    showQuestions(que_count);
-    queCounter(que_numb)
-    clearInterval(counter);
-    startTimer(timeValue);
-    clearInterval(counterLine);
-    startTimerLine(widthValue);
-    next_btn.style.display = "none";  
-}
-
-quit_quiz.onclick = ()=>{
-    window.location.reload();
-}
 
 next_btn.onclick = ()=>{
     if(que_count < questions.length - 1){
@@ -120,11 +102,13 @@ function optionSelected(answer){
                 }
             }
     }
+    sessionStorage.setItem("score", userScore);
 
     for(let i = 0; i < allOptions; i++){
         option_list.children[i].classList.add("disabled");
     }
     next_btn.style.display = "block";
+
 }
 
 
@@ -185,6 +169,23 @@ function startTimerLine(time){
 }
 
 
+var x = window.matchMedia("(max-width: 700px)")
+mediaTimerLine(x) // Call listener function at run time
+
+
+function mediaTimerLine(x) {
+    counterLine = setInterval(timer, 20);
+    function timer(){
+        time += 1;
+        timeLine.style.width = time +"px";     
+        if(time > 549 ){
+            clearInterval(counterLine);
+        }
+    }
+
+}
+    
+
 
 
 function queCounter(index){
@@ -192,3 +193,5 @@ function queCounter(index){
     let totalQuesCountTag = '<span><p>'+ index +'</p>of<p>'+ questions.length +'</p>Questions</span>';
     bottom_ques_counter.innerHTML = totalQuesCountTag;
 }
+
+

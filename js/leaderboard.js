@@ -1,10 +1,10 @@
 
 $(document).ready(function() {
-    const APIKEY = "63b64979969f06502871aa45";
+    const APIKEY = "63e4f31c478852088da67f37";
     let settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://mtinteractivedev-900a.restdb.io/rest/contact",
+        "url": "https://interactivedev-a926.restdb.io/rest/contact?q={}&sort=score&dir=-1",
         "method": "GET",
         "headers": {
           "content-type": "application/json",
@@ -14,9 +14,15 @@ $(document).ready(function() {
       }
       
       $.ajax(settings).done(function (response) {
-        content = `${content}<tr id='${response[i]._id}'><td>${response[i].name}</td>
-        <td>${response[i].score}</td>`
-
-        $("#table tbody").html(content);
+        limit = 3;
+        let content = "";
+        for (var i = 0; i < response.length && i < limit; i++) {  
+    
+          content = `${content}<tr id='${response[i]._id}'><td>${ i + 1}</td><td>${response[i].username}</td>
+          <td>${response[i].score}</td>`;
+        }
+        $("#leaderboard-list tbody").html(content);
+      
       });
+      
 })

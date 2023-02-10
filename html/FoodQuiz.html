@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="/css/quiz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="/css/common-style.css">
+    <link rel="stylesheet" href="/css/Food.css">
+
+</head>
+<body>
+    <div class="contain">
+        <div class="navbar">
+            <a href="/html/index.html"><img src="/Images/icon.png" class="icon"></a>
+            
+                <nav>
+                    <div class="navlink">
+                        <ul>
+                            <li><a href="/html/browse.html">TRIVIA</a></li>
+                            <li><a href="/html/leaderboard.html">LEADERBOARD</a></li>
+                            <li><a href="/html/login.html">LOGIN</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            
+        <img src="/Images/menu.png" class="menu-logo" alt="">
+    </div>
+
+    <div class="ground">
+        <div class="groundtitle"><h1>FOOD</h1></div>
+        <div class="start"><button>Start Quiz</button></div>
+    </div>
+
+    <div class="ibox">
+        <div class="ititle">
+            <span>Rules of this Quiz</span>
+        </div>
+            <div class="ilist">
+                <div class="info">1.  You will be provided <span>10 seconds</span> per question.</div>
+                <div class="info">2.  Select the Answer to lock your answer.</div>
+                <div class="info">3.  Once time is up it will move to the next question.</div>
+                <div class="info">4.  Try not to exit the quiz while playing.</div>
+                <div class="info">5.  Your scores will be shown on the leaderboard.</div>
+            </div>
+        <div class="button_rule">
+            <a href="/html/browse.html"><button href="/html/browse.html" class="quit">Exit Quiz</button></a>
+            <button class="restart">Continue</button>
+        </div>
+    </div>    
+
+
+    <!-------------------------------------------------QUIZ----------------------------------------------------------------->
+
+    <div class="qbox">
+        <header>
+            <div class="qtitle">Quiz Application</div>
+            <div class="timer">
+                <div class="time_text">Time Left</div>
+                <div class="timer_sec">10</div>
+            </div>
+            <div class="timeli"></div>
+        </header>
+        <section>
+            <div class="qtext">
+                <span>What is your name?</span>
+            </div>
+            <div class="optionli">
+                <!-- <div class="option">
+                    <span>Yu Haniel Bharwani</span>
+                    <div class="opt_icon cross"><i class="fas fa-times"></i></div>
+                </div>
+                <div class="option">
+                    <span>Yu Haniel Bharwani</span>
+                    <div class="opt_icon cross"><i class="fas fa-times"></i></div>
+                </div>
+                <div class="option">
+                    <span>Yu Haniel Bharwani</span>
+                    <div class="opt_icon cross"><i class="fas fa-times"></i></div>
+                </div>
+                <div class="option">
+                    <span>Yu Haniel Bharwani</span>
+                    <div class="opt_icon tick"><i class="fas fa-check"></i></div>
+                </div> -->
+            </div>
+        </section>
+
+        <footer>
+            <div class="totalqn">
+                <span><p>2</p>of<p>5</p>Questions</span>
+            </div>
+            <button class="next_button">Next</button>
+        </footer>
+    </div>
+
+    <div class="rbox">
+        <div class="ricon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="rtext">Thanks for Playing!</div>
+        <div class="score">
+        <span>
+            You scored <p>2</p> out of <p>5</p>
+        </span>
+        </div>
+        <div class="rebtn">
+            <a href=""><button href="/html/browse.html" class="quit">Exit Quiz</button></a>
+            <a href=""><button class="restart">Leaderboard</button></a>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="/js/foodqn.js"></script>
+    <script src="/js/quiz.js"></script>
+    <script src="/js/hamburger-menu.js"></script>
+    <script src="/js/score.js"></script>
+</body>
+</html>
