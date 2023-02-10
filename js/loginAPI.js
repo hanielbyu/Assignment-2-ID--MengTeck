@@ -47,9 +47,7 @@ $(document).ready(function() {
         }, 5000);
         $(".name").text("Welcome " + usernameValue);
         console.log(account);
-        console.log("this is", id);
         sessionStorage.setItem("id", JSON.stringify(id));
-        console.log("YOOO", sessionStorage.getItem("id"))
       }
       else if (username != usernameValue || password != passwordValue){
         $('.errormsg').text("Username or password is incorrect");

@@ -13,9 +13,7 @@ body {
     font-family: 'Lilita One', cursive;
     height: 100vh;
 }
-nav {
-    background: transparent;
-}
+
 .icon {
     width: 100px;
     cursor: pointer;
@@ -74,8 +72,9 @@ nav {
 #close {
     width: 60px;
     height: 30px;
-    border-radius: 35px;
-    background: linear-gradient(to left,#ff9412,#EE5A24, #ffa812);
+    border-radius: 10px;
+    background: linear-gradient(to left,#d97b08,#EE5A24, #e09a22);
+    color: white;
     background-size: 200%;
     border: none;
     cursor: pointer;
@@ -108,6 +107,10 @@ h3 {
     font-size: 12px;
     padding: 12px;
     width: 90%;
+}
+
+.small{
+    margin-bottom: 12px;
 }
 .LogUp button{
     display: block;
@@ -146,7 +149,12 @@ h3 {
     font-size: 12px;
     height: 13px;
 }
-  
+@media (max-width: 1212px){
+    .icon{
+        margin-left: 70px;
+    }
+}  
+
 @media (max-width: 952px){
     .title {
         font-size:12px;

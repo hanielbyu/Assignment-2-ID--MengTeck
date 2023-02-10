@@ -61,6 +61,10 @@ h3 {
 small, a {
     font-size: 12px;
 }
+
+.small{
+    margin-bottom: 12px;
+}
 .signin {
     display: flex;
     flex-direction: column;
@@ -125,8 +129,9 @@ small, a {
 #close {
     width: 60px;
     height: 30px;
-    border-radius: 35px;
-    background: linear-gradient(to left,#ff9412,#EE5A24, #ffa812);
+    border-radius: 10px;
+    background: linear-gradient(to left,#d97b08,#EE5A24, #e09a22);
+    color: white;
     background-size: 200%;
     border: none;
     cursor: pointer;
@@ -158,6 +163,13 @@ small, a {
     font-size: 12px;
     height: 13px;
 }
+
+@media (max-width: 1212px){
+    .icon{
+        margin-left: 70px;
+    }
+}
+
 
 @media (max-width: 952px){
     

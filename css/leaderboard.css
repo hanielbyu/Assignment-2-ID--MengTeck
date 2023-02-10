@@ -7,6 +7,22 @@ body {
     background-attachment: fixed;
     padding-left: 8%;
 }
+
+
+nav ul{
+    margin-right: 120px;
+    margin-top: 5px;
+}
+
+.icon{
+    margin-left: -5px;
+    margin-top: 5px;
+}
+
+main .lead{
+    margin-right: 100px;
+}
+
 #leaderboard {
     display: flex;
     justify-content: center;
@@ -17,18 +33,21 @@ body {
     border-spacing: 0; 
 }
 #leaderboard-header {
-    color: white;
+    color: wheat;
+    letter-spacing: 1.6px;
+    font-size: 20px;
 }
 th {
-    padding: 30px;
+    padding: 10px 90px;
     font-size: 25px;
     border: 1px solid rgba(0,0,0);
-    background: rgb(247,201,9);
-    background: linear-gradient(90deg, rgba(247,201,9,1) 36%, rgba(226,61,6,1) 100%);
+    background: wheat;
+    background: linear-gradient(90deg, rgb(239, 229, 188) 36%,rgb(249, 239, 157)) 100%);
 }
 td {
-    background: white;
+    background: rgba(249, 249, 249, 0.878);
     font-weight: bold;
+    font-size: 20px;
 }
 #name {
     width: 200px;
@@ -38,17 +57,17 @@ td {
     font-weight: bold;
 }
 tbody>tr>:nth-child(1){
-    color: rgb(255, 221, 26);
+    color: rgb(225, 191, 0);
     font-size: 30px;
     font-weight: bolder;
 }
 tbody>:nth-child(2){
-    color: rgb(192, 192, 192);
+    color: rgb(162, 162, 162);
     font-size: 30px;
     font-weight: bolder;
 }
 tbody>:nth-child(3){
-    color: rgb(205, 127, 50);
+    color: rgb(167, 103, 40);
     font-size: 30px;
     font-weight: bolder;
 }
@@ -57,4 +76,28 @@ tbody>:nth-child(3){
     align-items: center;
     justify-content: center;
     
+}
+
+@media screen and (max-width: 1210px){
+    #leaderboard-header h1{
+        font-size: 35px;
+        margin-left: 0px;
+        margin-bottom: -11px;
+    }
+
+    th{
+        padding: 8px 60px;
+    }
+}
+
+@media screen and (max-width: 770px){
+    th{
+        padding: 3px 30px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    main .lead{
+        margin-right: 30px;
+    }
 }
