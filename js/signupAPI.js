@@ -59,7 +59,7 @@ $(document).ready(function () {
         $(".animation").show();
         setTimeout(function () {
           $(".animation").hide();
-        }, 5000)
+        }, 6000)
       });
 
   });

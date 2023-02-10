@@ -53,8 +53,7 @@ $(document).ready(function() {
 
         //set item to able to access on other pages
         sessionStorage.setItem("id", JSON.stringify(id));
-        sessionStorage.setItem("username", JSON.stringify(usernameValue))
-        console.log(id)
+        sessionStorage.setItem("username", JSON.stringify(usernameValue));
       }
       else if (username !== usernameValue || password !== passwordValue){
         $('.errormsg').text("*Username or password is incorrect*");
