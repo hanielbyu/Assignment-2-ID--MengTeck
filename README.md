@@ -127,7 +127,19 @@ In this section, you should mention all of the languages, frameworks, libraries,
     2. check responsiveness of the page leaderboard table should shrink as width is smaller.
     3. Reload the page see if the lottie animations work.
 
-    (MENG TECKvv) <<<< delete this// write below here
+ 5. Sign Up form: 
+    1. Go to the "Sign up" page
+    2. Try to submit the empty form, an error message about the required fields appears
+    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
+    4. Try to type password and re enter password, if password word does not match. error message will show
+    5. when trying to input less than 8 characters for password, en error will appear
+    6. When email does not have @, an error message will appear.
+    7. Try to submit the form with all inputs valid and verify that a success message appears.
+6. Sign in form:
+    1. Go to the "Login" page
+    2. Try to submit the empty form and verify that an error message about the fields will appear.
+    3. Try to submit the form with an invalid username or password, an error message will appear
+    4. Try to submit the form with all inputs valid and verify that a success message appears.
 
 
  # Bugs:
