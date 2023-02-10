@@ -89,7 +89,7 @@ Feature4 - Will validate password requirements for upper case, lower case and nu
 - used jquery for login and sign up validation. https://jquery.com/  
 - used restdb to store login details and score for the quiz to diplay the leaderboard. https://restdb.io/
 - used lottie animation to show Sign up successful. https://lottiefiles.com/web-player?lottie_url=https%3A%2F%2Fassets2.lottiefiles.com%2Fpackages%2Flf20_niyfyoqs.json
-- used fontawesome icons for more variety of icons to use. link : "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+- used fontawesome icons for more variety of icons to use. link : "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1css/all.min.css"
 - used fonts google "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
 
 In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
@@ -170,7 +170,7 @@ https://www.w3schools.com/
 
 "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
 
-"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1css/all.min.css"
 
 
 
