@@ -3,7 +3,7 @@ const submit = document.getElementById('submit');
 $(document).ready(function() {
   const APIKEY = "63e4f31c478852088da67f37";
   $('.successfulmsg').hide();
-  // $('#loadingbar').hide();
+  $('#loadingbar').hide();
   $(".login").on("click", function(e) {
   e.preventDefault();
 
@@ -35,9 +35,12 @@ $(document).ready(function() {
     };
 
     $.ajax(settings).done(function (response) {
-      // retrieve id from database for later use
+      
       response.map(accinfo => {
+        // retrieve to check user input matches data in database
         let usernameValue = accinfo.username;
+        let passwordValue =accinfo.password;
+        // retrieve id from database for another use in the website
         let id = accinfo._id;
       // validation for password login
       if (username === usernameValue && password === passwordValue) {
@@ -50,7 +53,7 @@ $(document).ready(function() {
         sessionStorage.setItem("id", JSON.stringify(id));
         sessionStorage.setItem("username", JSON.stringify(usernameValue))
       }
-      else if (username != usernameValue || password != passwordValue){
+      else if (username !== usernameValue || password !== passwordValue){
         $('.errormsg').text("Username or password is incorrect");
       }
 

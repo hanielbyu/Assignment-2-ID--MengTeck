@@ -21,6 +21,7 @@
                                 <li><a href="/html/browse.html">TRIVIA</a></li>
                                 <li><a href="/html/leaderboard.html">LEADERBOARD</a></li>
                                 <li><a href="/html/login.html">LOGIN</a></li>
+                                <li><div id="acc-username"></div></li>
                             </ul>
                         </div>
                     </nav>
@@ -50,4 +51,8 @@
     </div>
 </body>
 <script src="/js/hamburger-menu.js"></script>
+<script>
+    let username = JSON.parse(sessionStorage.getItem("username"))
+    $('#acc-username').text(username);
+</script>
 </html>
