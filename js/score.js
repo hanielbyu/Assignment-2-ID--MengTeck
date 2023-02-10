@@ -1,16 +1,16 @@
 // retrieving score from session storage to patch score 
 let score = JSON.parse(sessionStorage.getItem("score"));
-<<<<<<< HEAD
+
    $(document).ready(function () {
    // let username = JSON.parse(sessionStorage.getItem("username"));
    // const id = '63e4f2b362144c6900016ceb'
    score = score * 10;
-=======
+
 // retrieving id from current session login
 let id = JSON.parse(sessionStorage.getItem("id"));
 console.log(id)
    $(document).ready(function () {
->>>>>>> b22f3a0cc63eb4f52c247c9dc70ae8fde6d4357c
+
    $(".restart").on("click", function(e) {
    e.preventDefault();
    let id = JSON.parse(sessionStorage.getItem("id"));
@@ -36,9 +36,9 @@ console.log(id)
   })
    })
    
-})
+});
       
-    
+})   
     
     
     

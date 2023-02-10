@@ -49,14 +49,13 @@ $(document).ready(function() {
           $(".animation").hide();
         }, 5000);
         $(".name").text("Welcome " + usernameValue);
-<<<<<<< HEAD
         console.log(account);
         sessionStorage.setItem("id", JSON.stringify(id));
-=======
+
         //set item to able to access on other pages
         sessionStorage.setItem("id", JSON.stringify(id));
         sessionStorage.setItem("username", JSON.stringify(usernameValue))
->>>>>>> b22f3a0cc63eb4f52c247c9dc70ae8fde6d4357c
+
       }
       else if (username !== usernameValue || password !== passwordValue){
         $('.errormsg').text("Username or password is incorrect");
