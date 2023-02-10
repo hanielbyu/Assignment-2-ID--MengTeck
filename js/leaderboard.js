@@ -1,4 +1,4 @@
-
+// display leaderboard for top 10 highest scores to be retrieved from database
 $(document).ready(function() {
     const APIKEY = "63e4f31c478852088da67f37";
     let settings = {
@@ -14,7 +14,7 @@ $(document).ready(function() {
       }
       
       $.ajax(settings).done(function (response) {
-        limit = 3;
+        limit = 10;
         let content = "";
         for (var i = 0; i < response.length && i < limit; i++) {  
     

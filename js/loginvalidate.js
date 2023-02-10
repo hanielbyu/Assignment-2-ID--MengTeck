@@ -6,7 +6,7 @@ form.addEventListener('input', e => {
     e.preventDefault();
     validateInputs();
 });
-
+// const to identify where to set error and success
 const setError = (element, message) => {
     const inputControl = element.parentElement;
     const errorDisplay = inputControl.querySelector('.error');
@@ -36,7 +36,7 @@ const validateInputs = () => {
     }
 
     
-    
+    // validation for password input requirements
     if (passwordValue.length< 8) {
         setError(password, 'Password must be at least 8 characters!')
     }

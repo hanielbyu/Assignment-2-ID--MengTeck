@@ -8,7 +8,7 @@ form.addEventListener('input', e => {
     e.preventDefault();
     validateInputs();
 });
-
+// const to identify where to set error and success
 const setError = (element, message) => {
     const inputControl = element.parentElement;
     const errorDisplay = inputControl.querySelector('.error');
@@ -26,7 +26,7 @@ const setSuccess = element => {
     inputControl.classList.add('success');
     inputControl.classList.remove('error');
 };
-
+// regex validation for email
 const isValidEmail = email => {
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email).toLowerCase());
@@ -52,7 +52,7 @@ const validateInputs = () => {
     } else {
         setSuccess(email);
     }
-
+    // validation for password input requirements
     if (password1Value === '') {
         setError(password1, 'Password is required')
     } else if (password1Value.length < 8) {
@@ -77,16 +77,7 @@ const validateInputs = () => {
     }
     else if (password1Value !== password2Value) {
         setError(password2, "Passwords does not match!")
-    }
-    else if (password2Value.search(/[A-Z]/) < 0) {
-        setError(password2, 'Password must contain at least one uppercase letter')
-    }
-    else if (password2Value.search(/[a-z]/) < 0) {
-        setError(password2, 'Password must contain at least one lowercase letter');
-    }
-    else if (password2Value.search(/[0-9]/) < 0) {
-        setError(password2, 'Password must have at least a number')
-    }  
+    } 
     else {
         setSuccess(password2);
     }
