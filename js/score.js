@@ -1,17 +1,14 @@
-// updating points to restdb
-
-
-
+// retrieving score from session storage to patch score 
 let score = JSON.parse(sessionStorage.getItem("score"));
+// retrieving id from current session login
 let id = JSON.parse(sessionStorage.getItem("id"));
 console.log(id)
    $(document).ready(function () {
-   // let username = JSON.parse(sessionStorage.getItem("username"));
-   // const id = '63e4f2b362144c6900016ceb'
    $(".restart").on("click", function(e) {
    e.preventDefault();
    let id = JSON.parse(sessionStorage.getItem("id"));
    const APIKEY = "63e4f31c478852088da67f37";
+   // updating points
    let jsondata = {"score": score};
    let settings = {  "async": true,
      "crossDomain": true,
@@ -25,10 +22,10 @@ console.log(id)
          "processData": false,
           "data": JSON.stringify(jsondata)
          }
-         console.log("goes here", jsondata);
+  
       
   $.ajax(settings).done(function (response) {
-   console.log("helloo" + response);
+   console.log(response);
   })
    })
    

@@ -1,5 +1,5 @@
 const submit = document.getElementById('submit');
-
+// login validation to retrieve user data from restdb
 $(document).ready(function() {
   const APIKEY = "63e4f31c478852088da67f37";
   $('.successfulmsg').hide();
@@ -35,21 +35,20 @@ $(document).ready(function() {
     };
 
     $.ajax(settings).done(function (response) {
-      response.map(account => {
-        let usernameValue = account.username;
-        let passwordValue = account.password;
-        let id = account._id;
-      
+      // retrieve id from database for later use
+      response.map(accinfo => {
+        let usernameValue = accinfo.username;
+        let id = accinfo._id;
+      // validation for password login
       if (username === usernameValue && password === passwordValue) {
         $('.successfulmsg').show();
         setTimeout(function () {
           $(".animation").hide();
         }, 5000);
         $(".name").text("Welcome " + usernameValue);
-        console.log(account);
-        console.log("this is", id);
+        //set item to able to access on other pages
         sessionStorage.setItem("id", JSON.stringify(id));
-        console.log("YOOO", sessionStorage.getItem("id"))
+        sessionStorage.setItem("username", JSON.stringify(usernameValue))
       }
       else if (username != usernameValue || password != passwordValue){
         $('.errormsg').text("Username or password is incorrect");
